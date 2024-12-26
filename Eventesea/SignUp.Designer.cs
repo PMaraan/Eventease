@@ -1,0 +1,169 @@
+﻿namespace Eventesea
+{
+    partial class SignUp
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtFirst = new System.Windows.Forms.TextBox();
+            this.txtLast = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtConfPass = new System.Windows.Forms.TextBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.btnRegister);
+            this.panel1.Controls.Add(this.txtConfPass);
+            this.panel1.Controls.Add(this.txtPass);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtUsername);
+            this.panel1.Controls.Add(this.txtLast);
+            this.panel1.Controls.Add(this.txtFirst);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(34, 23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(719, 392);
+            this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(38, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(228, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Sign Up Now";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(42, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(253, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Fill in the form below to get instant access:";
+            // 
+            // txtFirst
+            // 
+            this.txtFirst.Location = new System.Drawing.Point(37, 119);
+            this.txtFirst.Name = "txtFirst";
+            this.txtFirst.Size = new System.Drawing.Size(199, 22);
+            this.txtFirst.TabIndex = 2;
+            this.txtFirst.Text = "First Name";
+            // 
+            // txtLast
+            // 
+            this.txtLast.Location = new System.Drawing.Point(256, 118);
+            this.txtLast.Name = "txtLast";
+            this.txtLast.Size = new System.Drawing.Size(232, 22);
+            this.txtLast.TabIndex = 3;
+            this.txtLast.Text = "Last Name";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(35, 160);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(461, 22);
+            this.txtUsername.TabIndex = 4;
+            this.txtUsername.Text = "Username";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(32, 203);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(463, 22);
+            this.txtEmail.TabIndex = 5;
+            this.txtEmail.Text = "E-Mail Address";
+            // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(31, 248);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(464, 22);
+            this.txtPass.TabIndex = 6;
+            this.txtPass.Text = "Password";
+            // 
+            // txtConfPass
+            // 
+            this.txtConfPass.Location = new System.Drawing.Point(26, 297);
+            this.txtConfPass.Name = "txtConfPass";
+            this.txtConfPass.PasswordChar = '*';
+            this.txtConfPass.Size = new System.Drawing.Size(468, 22);
+            this.txtConfPass.TabIndex = 7;
+            this.txtConfPass.Text = "Confirm Password";
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.Color.Black;
+            this.btnRegister.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRegister.Location = new System.Drawing.Point(494, 338);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(173, 35);
+            this.btnRegister.TabIndex = 8;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            // 
+            // SignUp
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
+            this.Name = "SignUp";
+            this.Text = "SignUp";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtConfPass;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtLast;
+        private System.Windows.Forms.TextBox txtFirst;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRegister;
+    }
+}

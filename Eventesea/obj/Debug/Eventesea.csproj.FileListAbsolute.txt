@@ -1,0 +1,10 @@
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\bin\Debug\Eventesea.exe.config
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\bin\Debug\Eventesea.exe
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\bin\Debug\Eventesea.pdb
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\obj\Debug\Eventesea.csproj.AssemblyReference.cache
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\obj\Debug\Eventesea.Form1.resources
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\obj\Debug\Eventesea.Properties.Resources.resources
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\obj\Debug\Eventesea.csproj.GenerateResource.cache
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\obj\Debug\Eventesea.csproj.CoreCompileInputs.cache
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\obj\Debug\Eventesea.exe
+C:\Users\Patrick Maraan\source\repos\Eventesea\Eventesea\obj\Debug\Eventesea.pdb
