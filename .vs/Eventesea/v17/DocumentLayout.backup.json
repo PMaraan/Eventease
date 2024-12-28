@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventesea\\manageevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\manageevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventesea\\manageevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\manageevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventesea\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventesea\\analysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\analysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventesea\\calendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\calendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventesea\\eventlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\eventlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventesea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageEvent.cs",
+              "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\ManageEvent.cs",
+              "RelativeDocumentMoniker": "Eventesea\\ManageEvent.cs",
+              "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\ManageEvent.cs",
+              "RelativeToolTip": "Eventesea\\ManageEvent.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwDgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T12:49:58.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageEvent.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\ManageEvent.cs",
+              "RelativeDocumentMoniker": "Eventesea\\ManageEvent.cs",
+              "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\ManageEvent.cs [Design]",
+              "RelativeToolTip": "Eventesea\\ManageEvent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T12:49:20.741Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Analysis.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\Analysis.cs",
+              "RelativeDocumentMoniker": "Eventesea\\Analysis.cs",
+              "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\Analysis.cs [Design]",
+              "RelativeToolTip": "Eventesea\\Analysis.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T12:47:18.333Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventListing.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\EventListing.cs",
+              "RelativeDocumentMoniker": "Eventesea\\EventListing.cs",
+              "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\EventListing.cs [Design]",
+              "RelativeToolTip": "Eventesea\\EventListing.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T12:40:14.266Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\Program.cs",
+              "RelativeDocumentMoniker": "Eventesea\\Program.cs",
+              "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\Program.cs",
+              "RelativeToolTip": "Eventesea\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T12:28:39.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Calendar.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\Calendar.cs",
+              "RelativeDocumentMoniker": "Eventesea\\Calendar.cs",
+              "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\Calendar.cs [Design]",
+              "RelativeToolTip": "Eventesea\\Calendar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T12:21:58.304Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\Index.cs",
+              "RelativeDocumentMoniker": "Eventesea\\Index.cs",
+              "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventesea\\Index.cs [Design]",
+              "RelativeToolTip": "Eventesea\\Index.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T09:25:11.991Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

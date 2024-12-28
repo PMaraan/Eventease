@@ -28,30 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEventListing = new System.Windows.Forms.Button();
             this.btnCalendar = new System.Windows.Forms.Button();
             this.btnAnalysis = new System.Windows.Forms.Button();
             this.btnManage = new System.Windows.Forms.Button();
             this.btnNotif = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,13 +73,14 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnEventListing, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnCalendar, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnAnalysis, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnManage, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnNotif, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnSettings, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnUser, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pbxLogo, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -85,19 +89,20 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(797, 69);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // btnEventListing
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGray;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(138, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Event Listing";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnEventListing.BackColor = System.Drawing.Color.LightGray;
+            this.btnEventListing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEventListing.FlatAppearance.BorderSize = 0;
+            this.btnEventListing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEventListing.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventListing.Location = new System.Drawing.Point(138, 3);
+            this.btnEventListing.Name = "btnEventListing";
+            this.btnEventListing.Size = new System.Drawing.Size(129, 63);
+            this.btnEventListing.TabIndex = 0;
+            this.btnEventListing.Text = "Event Listing";
+            this.btnEventListing.UseVisualStyleBackColor = false;
+            this.btnEventListing.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCalendar
             // 
@@ -112,6 +117,7 @@
             this.btnCalendar.TabIndex = 1;
             this.btnCalendar.Text = "Calendar";
             this.btnCalendar.UseVisualStyleBackColor = false;
+            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // btnAnalysis
             // 
@@ -125,6 +131,7 @@
             this.btnAnalysis.TabIndex = 2;
             this.btnAnalysis.Text = "Analysis";
             this.btnAnalysis.UseVisualStyleBackColor = true;
+            this.btnAnalysis.Click += new System.EventHandler(this.btnAnalysis_Click);
             // 
             // btnManage
             // 
@@ -138,12 +145,15 @@
             this.btnManage.TabIndex = 3;
             this.btnManage.Text = "Manage Event";
             this.btnManage.UseVisualStyleBackColor = true;
+            this.btnManage.Click += new System.EventHandler(this.btnManage_Click);
             // 
             // btnNotif
             // 
+            this.btnNotif.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnNotif.Image = ((System.Drawing.Image)(resources.GetObject("btnNotif.Image")));
             this.btnNotif.Location = new System.Drawing.Point(678, 3);
             this.btnNotif.Name = "btnNotif";
-            this.btnNotif.Size = new System.Drawing.Size(33, 23);
+            this.btnNotif.Size = new System.Drawing.Size(33, 63);
             this.btnNotif.TabIndex = 4;
             this.btnNotif.Text = "button5";
             this.btnNotif.UseVisualStyleBackColor = true;
@@ -166,6 +176,17 @@
             this.btnUser.Text = "button7";
             this.btnUser.UseVisualStyleBackColor = true;
             // 
+            // pbxLogo
+            // 
+            this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
+            this.pbxLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxLogo.InitialImage")));
+            this.pbxLogo.Location = new System.Drawing.Point(3, 3);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(129, 63);
+            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxLogo.TabIndex = 7;
+            this.pbxLogo.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
@@ -177,37 +198,20 @@
             this.panel1.Size = new System.Drawing.Size(504, 243);
             this.panel1.TabIndex = 1;
             // 
-            // panel2
+            // listBox1
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.checkedListBox1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(35, 336);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(235, 210);
-            this.panel2.TabIndex = 2;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(26, 43);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(177, 164);
+            this.listBox1.TabIndex = 2;
             // 
-            // panel3
+            // monthCalendar1
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(276, 336);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(263, 210);
-            this.panel3.TabIndex = 3;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.Controls.Add(this.listBox3);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(554, 90);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(242, 456);
-            this.panel4.TabIndex = 4;
+            this.monthCalendar1.Location = new System.Drawing.Point(233, 11);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 1;
             // 
             // label1
             // 
@@ -221,6 +225,24 @@
             this.label1.Text = "Schedule";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.checkedListBox1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(35, 336);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(235, 210);
+            this.panel2.TabIndex = 2;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(26, 71);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(198, 123);
+            this.checkedListBox1.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -233,53 +255,17 @@
             this.label2.Text = "Registered Attendees";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // panel3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(68, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Ticket Sales";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(50, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 25);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Real-Time Update";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Silver;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(95, 71);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 32);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "312";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(62, 128);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 25);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Unsold Tickets";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Location = new System.Drawing.Point(276, 336);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(263, 210);
+            this.panel3.TabIndex = 3;
             // 
             // label7
             // 
@@ -293,20 +279,51 @@
             this.label7.Text = "312";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // monthCalendar1
+            // label6
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(233, 11);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 1;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(62, 128);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 25);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Unsold Tickets";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listBox1
+            // label5
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(26, 43);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(177, 164);
-            this.listBox1.TabIndex = 2;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Silver;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(95, 71);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 32);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "312";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(68, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Ticket Sales";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gray;
+            this.panel4.Controls.Add(this.listBox3);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(554, 90);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(242, 456);
+            this.panel4.TabIndex = 4;
             // 
             // listBox3
             // 
@@ -327,13 +344,17 @@
             this.listBox3.Size = new System.Drawing.Size(204, 340);
             this.listBox3.TabIndex = 1;
             // 
-            // checkedListBox1
+            // label4
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(26, 71);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(198, 123);
-            this.checkedListBox1.TabIndex = 1;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(50, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(170, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Real-Time Update";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Index
             // 
@@ -349,6 +370,7 @@
             this.Name = "Index";
             this.Text = "Index";
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -364,7 +386,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEventListing;
         private System.Windows.Forms.Button btnCalendar;
         private System.Windows.Forms.Button btnAnalysis;
         private System.Windows.Forms.Button btnManage;
@@ -386,5 +408,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pbxLogo;
     }
 }
