@@ -56,5 +56,47 @@ namespace Eventesea
             manageEvent.Show();
             this.Hide();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            //prompt the user to confirm action
+            MessageBox.Show("Do you want to add entry to database?");
+            //insert into database upon confirmation
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //prompt the user to confirm action
+            MessageBox.Show("Do you want to delete entry in database? This action cannot be undone.");
+            //insert into database upon confirmation
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //check for empty fields
+            if (txtEventName.Text == string.Empty || txtVenue.Text == string.Empty || txtAddress.Text == string.Empty || txtHost.Text == string.Empty)
+            {
+                lblEmptyFieldsWarning.Visible = true;
+            }
+            //update the database
+        }
+
+        private void btnRegisterTickets_Click(object sender, EventArgs e)
+        {
+            //check if input is an integer
+            if (!int.TryParse(txtNumOfTickets.Text, out int num))
+            {
+                lblValidNumWarning.Visible = true;
+                return;
+            }
+            //check if value is a positive value
+            else if (num <= 0)
+            {
+                lblValidNumWarning.Visible = true;
+                return;
+            }
+            lblValidNumWarning.Visible = false;
+            //insert into database
+        }
     }
 }

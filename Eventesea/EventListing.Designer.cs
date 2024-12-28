@@ -217,7 +217,7 @@
             this.btnManage.Name = "btnManage";
             this.btnManage.Size = new System.Drawing.Size(130, 63);
             this.btnManage.TabIndex = 3;
-            this.btnManage.Text = "Manage Event";
+            this.btnManage.Text = "Create Event";
             this.btnManage.UseVisualStyleBackColor = true;
             this.btnManage.Click += new System.EventHandler(this.btnManage_Click);
             // 

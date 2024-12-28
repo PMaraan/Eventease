@@ -50,10 +50,10 @@ namespace Eventesea
         private void btnManage_Click(object sender, EventArgs e)
         {
             //debounce if the button clicked corresponds to the current page
-            if (this.Text == "ManageEvent") return;
+            if (this.Text == "CreateEvent") return;
             //open Event Listings page
-            ManageEvent manageEvent = new ManageEvent();
-            manageEvent.Show();
+            CreateEvent createEvent = new CreateEvent();
+            createEvent.Show();
             this.Hide();
         }
     }

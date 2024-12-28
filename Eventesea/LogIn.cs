@@ -16,5 +16,18 @@ namespace Eventesea
         {
             InitializeComponent();
         }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            //query the database
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            //redirect to sign up page
+            SignUp signUp = new SignUp();
+            signUp.Show();
+            this.Hide();
+        }
     }
 }

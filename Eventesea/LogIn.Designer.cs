@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblForgot = new System.Windows.Forms.LinkLabel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLinkedIn = new System.Windows.Forms.Button();
-            this.btnEmail = new System.Windows.Forms.Button();
-            this.btnFB = new System.Windows.Forms.Button();
-            this.btnLogIn = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
+            this.btnLogIn = new System.Windows.Forms.Button();
+            this.btnFB = new System.Windows.Forms.Button();
+            this.btnEmail = new System.Windows.Forms.Button();
+            this.btnLinkedIn = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblForgot = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,62 +69,80 @@
             this.panel1.Size = new System.Drawing.Size(603, 317);
             this.panel1.TabIndex = 0;
             // 
-            // splitter1
+            // btnSignUp
             // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(292, 317);
-            this.splitter1.TabIndex = 0;
-            this.splitter1.TabStop = false;
+            this.btnSignUp.BackColor = System.Drawing.Color.Black;
+            this.btnSignUp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSignUp.Location = new System.Drawing.Point(386, 189);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(138, 33);
+            this.btnSignUp.TabIndex = 14;
+            this.btnSignUp.Text = "Sign Up";
+            this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
-            // label1
+            // btnLogIn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 53);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Log In";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogIn.BackColor = System.Drawing.Color.Black;
+            this.btnLogIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLogIn.Location = new System.Drawing.Point(96, 265);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(125, 34);
+            this.btnLogIn.TabIndex = 13;
+            this.btnLogIn.Text = "Log In";
+            this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
-            // label2
+            // btnFB
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 121);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Or Sign in using E-Mail Address";
+            this.btnFB.Location = new System.Drawing.Point(199, 68);
+            this.btnFB.Name = "btnFB";
+            this.btnFB.Size = new System.Drawing.Size(50, 50);
+            this.btnFB.TabIndex = 12;
+            this.btnFB.Text = "button3";
+            this.btnFB.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btnEmail
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 147);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Email Address";
+            this.btnEmail.Location = new System.Drawing.Point(124, 65);
+            this.btnEmail.Name = "btnEmail";
+            this.btnEmail.Size = new System.Drawing.Size(50, 50);
+            this.btnEmail.TabIndex = 11;
+            this.btnEmail.Text = "button2";
+            this.btnEmail.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // btnLinkedIn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 197);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Password";
+            this.btnLinkedIn.Location = new System.Drawing.Point(43, 65);
+            this.btnLinkedIn.Name = "btnLinkedIn";
+            this.btnLinkedIn.Size = new System.Drawing.Size(50, 50);
+            this.btnLinkedIn.TabIndex = 10;
+            this.btnLinkedIn.Text = "button1";
+            this.btnLinkedIn.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // txtPassword
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(364, 34);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 84);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Create,\r\nAccount!";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtPassword.Location = new System.Drawing.Point(61, 221);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(200, 22);
+            this.txtPassword.TabIndex = 9;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(60, 166);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(201, 22);
+            this.txtEmail.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(333, 137);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(250, 16);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Sign up if you still don\'t have an account...";
             // 
             // lblForgot
             // 
@@ -137,88 +155,72 @@
             this.lblForgot.TabStop = true;
             this.lblForgot.Text = "Forgot your Password?";
             // 
-            // label6
+            // label5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(333, 137);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(313, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Sign up if you still don\'t have an account...";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(364, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(172, 84);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Create,\r\nAccount!";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtEmail
+            // label4
             // 
-            this.txtEmail.Location = new System.Drawing.Point(60, 166);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(201, 22);
-            this.txtEmail.TabIndex = 8;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(42, 197);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Password";
             // 
-            // txtPassword
+            // label3
             // 
-            this.txtPassword.Location = new System.Drawing.Point(61, 221);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(200, 22);
-            this.txtPassword.TabIndex = 9;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(42, 147);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 16);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Email Address";
             // 
-            // btnLinkedIn
+            // label2
             // 
-            this.btnLinkedIn.Location = new System.Drawing.Point(43, 65);
-            this.btnLinkedIn.Name = "btnLinkedIn";
-            this.btnLinkedIn.Size = new System.Drawing.Size(50, 50);
-            this.btnLinkedIn.TabIndex = 10;
-            this.btnLinkedIn.Text = "button1";
-            this.btnLinkedIn.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(42, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(194, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Or Sign in using E-Mail Address";
             // 
-            // btnEmail
+            // label1
             // 
-            this.btnEmail.Location = new System.Drawing.Point(124, 65);
-            this.btnEmail.Name = "btnEmail";
-            this.btnEmail.Size = new System.Drawing.Size(50, 50);
-            this.btnEmail.TabIndex = 11;
-            this.btnEmail.Text = "button2";
-            this.btnEmail.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(76, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 42);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Log In";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnFB
+            // splitter1
             // 
-            this.btnFB.Location = new System.Drawing.Point(199, 68);
-            this.btnFB.Name = "btnFB";
-            this.btnFB.Size = new System.Drawing.Size(50, 50);
-            this.btnFB.TabIndex = 12;
-            this.btnFB.Text = "button3";
-            this.btnFB.UseVisualStyleBackColor = true;
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(292, 317);
+            this.splitter1.TabIndex = 0;
+            this.splitter1.TabStop = false;
             // 
-            // btnLogIn
-            // 
-            this.btnLogIn.BackColor = System.Drawing.Color.Black;
-            this.btnLogIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLogIn.Location = new System.Drawing.Point(96, 265);
-            this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(125, 34);
-            this.btnLogIn.TabIndex = 13;
-            this.btnLogIn.Text = "Sign In";
-            this.btnLogIn.UseVisualStyleBackColor = false;
-            // 
-            // btnSignUp
-            // 
-            this.btnSignUp.BackColor = System.Drawing.Color.Black;
-            this.btnSignUp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSignUp.Location = new System.Drawing.Point(386, 189);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(138, 33);
-            this.btnSignUp.TabIndex = 14;
-            this.btnSignUp.Text = "Sign Up";
-            this.btnSignUp.UseVisualStyleBackColor = false;
-            // 
-            // SignIn
+            // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "SignIn";
-            this.Text = "Sign In";
+            this.Name = "LogIn";
+            this.Text = "Log In";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
