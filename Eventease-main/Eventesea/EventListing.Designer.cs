@@ -37,6 +37,7 @@
             this.timeStart = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timeEnd = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ticketNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.eventID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnEventListing = new System.Windows.Forms.Button();
             this.btnCalendar = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.btnUser = new System.Windows.Forms.Button();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.eventID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
@@ -115,6 +115,11 @@
             // 
             this.ticketNum.Text = "Total Tickets";
             this.ticketNum.Width = 100;
+            // 
+            // eventID
+            // 
+            this.eventID.Text = "ID";
+            this.eventID.Width = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -261,11 +266,6 @@
             this.button1.Text = "Manage Selected Event";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // eventID
-            // 
-            this.eventID.Text = "ID";
-            this.eventID.Width = 30;
             // 
             // EventListing
             // 

@@ -76,6 +76,18 @@
     <Compile Include="EventListing.Designer.cs">
       <DependentUpon>EventListing.cs</DependentUpon>
     </Compile>
+    <Compile Include="MsgBoxAddAttendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxAddAttendee.Designer.cs">
+      <DependentUpon>MsgBoxAddAttendee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgBoxRemoveAttendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxRemoveAttendee.Designer.cs">
+      <DependentUpon>MsgBoxRemoveAttendee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
@@ -127,6 +139,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EventListing.resx">
       <DependentUpon>EventListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxAddAttendee.resx">
+      <DependentUpon>MsgBoxAddAttendee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxRemoveAttendee.resx">
+      <DependentUpon>MsgBoxRemoveAttendee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

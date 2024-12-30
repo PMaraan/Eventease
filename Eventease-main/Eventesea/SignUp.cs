@@ -52,7 +52,8 @@ namespace Eventesea
 
                     con.Open();
                     //insert into database
-                    string register = $"INSERT into User_Accounts (User_ID, User_name, User_FN, User_LN, User_Email, User_Password) VALUES ({newUserID}, '{txtUsername.Text}', '{txtFirst.Text}', '{txtLast.Text}', '{txtEmail.Text}', '{txtPass.Text}')";
+                    string register = $"INSERT into User_Accounts (User_ID, User_name, User_FN, User_LN, User_Email, User_Password) VALUES " + 
+                        $"({newUserID}, '{txtUsername.Text}', '{txtFirst.Text}', '{txtLast.Text}', '{txtEmail.Text}', '{txtPass.Text}')";
                     cmd = new OleDbCommand(register, con);
                     cmd.ExecuteNonQuery();
 
@@ -65,9 +66,9 @@ namespace Eventesea
                     con.Close();
 
                     MessageBox.Show($"Account has been registered! + {newUserID}");
-                    //LogIn logIn = new LogIn();
-                    //logIn.Show();
-                    //this.Hide();
+                    LogIn logIn = new LogIn();
+                    logIn.Show();
+                    this.Hide();
 
                 }
                 catch (Exception ex)

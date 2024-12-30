@@ -21,10 +21,17 @@ namespace Eventesea
     {
         public static int EventID { get; set; }
         public static string EventName { get; set; }
-        public static DateTime EventDate { get; set; }
-        public static DateTime EventStart { get; set; }
-        public static DateTime EventEnd { get; set; }
+        public static string EventDate { get; set; }
+        public static string EventStart { get; set; }
+        public static string EventEnd { get; set; }
         public static string EventTicket { get; set; }
+
+    }
+    public static class AttendeeSession
+    {
+        public static int AttendeeID { get; set; }
+        public static string AttendeeName { get; set; }
+        public static string AttendeeEmail { get; set; }
 
     }
 }

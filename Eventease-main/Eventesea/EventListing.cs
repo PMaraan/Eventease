@@ -17,13 +17,6 @@ namespace Eventesea
         OleDbDataAdapter da = new OleDbDataAdapter();
         OleDbCommand cmd = new OleDbCommand();
 
-        int eventSesID = EventSession.EventID;
-        string eventSesName = EventSession.EventName;
-        DateTime eventSesDate = EventSession.EventDate;
-        DateTime eventSesStart = EventSession.EventStart;
-        DateTime eventSesEnd = EventSession.EventEnd;
-        string eventSesTicket = EventSession.EventTicket;
-
         public EventListing()
         {
             InitializeComponent();
@@ -33,8 +26,6 @@ namespace Eventesea
             string currentUserLN = UserSession.UserLN;
             string currentUserEmail = UserSession.UserEmail;
             string currentUserPass = UserSession.UserPass;
-
-
 
             con.Open();
             string viewEvents = $"SELECT* FROM Event_Database where User_ID = {UserSession.UserID}";
@@ -103,19 +94,23 @@ namespace Eventesea
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //creates an event session so the selected event is also applied in the manage event page
             if(listView1.SelectedItems.Count > 0)
             {
                 ListViewItem selectedItem = listView1.SelectedItems[0];
 
-                eventSesName = selectedItem.SubItems[0].Text;
-                eventSesTicket = selectedItem.SubItems[4].Text;
+                EventSession.EventName = selectedItem.SubItems[0].Text;
+                EventSession.EventTicket = selectedItem.SubItems[4].Text;
                 
-                if(int.TryParse(selectedItem.SubItems[5].Text, out int eventID) && DateTime.TryParse(selectedItem.SubItems[1].Text, out DateTime eventDate) && DateTime.TryParse(selectedItem.SubItems[2].Text, out DateTime eventStart) && DateTime.TryParse(selectedItem.SubItems[3].Text, out DateTime eventEnd))
+                if(int.TryParse(selectedItem.SubItems[5].Text, out int eventID) && 
+                    DateTime.TryParse(selectedItem.SubItems[1].Text, out DateTime eventDate) && 
+                    DateTime.TryParse(selectedItem.SubItems[2].Text, out DateTime eventStart) && 
+                    DateTime.TryParse(selectedItem.SubItems[3].Text, out DateTime eventEnd))
                 {
-                    eventSesID = eventID;
-                    eventSesDate = eventDate;
-                    eventSesStart = eventStart;
-                    eventSesEnd = eventEnd;
+                    EventSession.EventID = eventID;
+                    EventSession.EventDate = eventDate.ToString();
+                    EventSession.EventStart = eventStart.ToString();
+                    EventSession.EventEnd = eventEnd.ToString();
                 }
 
                 ManageEvent manage = new ManageEvent();

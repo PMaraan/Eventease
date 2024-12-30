@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageEvent));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timeEnd = new System.Windows.Forms.DateTimePicker();
+            this.timeStart = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
@@ -47,7 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtAttendeeName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -66,8 +67,13 @@
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
-            this.timeStart = new System.Windows.Forms.DateTimePicker();
-            this.timeEnd = new System.Windows.Forms.DateTimePicker();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.attendeeName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.attendeeEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtAttendeeEmail = new System.Windows.Forms.TextBox();
+            this.eventID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.attendID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -100,6 +106,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(338, 633);
             this.panel1.TabIndex = 5;
+            // 
+            // timeEnd
+            // 
+            this.timeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timeEnd.Location = new System.Drawing.Point(40, 414);
+            this.timeEnd.Name = "timeEnd";
+            this.timeEnd.Size = new System.Drawing.Size(200, 26);
+            this.timeEnd.TabIndex = 20;
+            // 
+            // timeStart
+            // 
+            this.timeStart.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timeStart.Location = new System.Drawing.Point(40, 362);
+            this.timeStart.Name = "timeStart";
+            this.timeStart.Size = new System.Drawing.Size(200, 26);
+            this.timeStart.TabIndex = 19;
             // 
             // label12
             // 
@@ -244,45 +266,37 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.txtAttendeeEmail);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.listView1);
             this.panel2.Controls.Add(this.btnDelete);
-            this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.txtAttendeeName);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(395, 121);
+            this.panel2.Location = new System.Drawing.Point(395, 108);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(484, 198);
+            this.panel2.Size = new System.Drawing.Size(484, 430);
             this.panel2.TabIndex = 6;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(108, 144);
+            this.btnDelete.Location = new System.Drawing.Point(271, 171);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(72, 34);
+            this.btnDelete.Size = new System.Drawing.Size(162, 34);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(220, 12);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(245, 164);
-            this.listBox1.TabIndex = 4;
-            // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(19, 145);
+            this.btnAdd.Location = new System.Drawing.Point(60, 171);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(72, 34);
+            this.btnAdd.Size = new System.Drawing.Size(156, 34);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -290,10 +304,10 @@
             // 
             // txtAttendeeName
             // 
-            this.txtAttendeeName.Location = new System.Drawing.Point(19, 84);
+            this.txtAttendeeName.Location = new System.Drawing.Point(19, 73);
             this.txtAttendeeName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAttendeeName.Name = "txtAttendeeName";
-            this.txtAttendeeName.Size = new System.Drawing.Size(160, 26);
+            this.txtAttendeeName.Size = new System.Drawing.Size(448, 26);
             this.txtAttendeeName.TabIndex = 2;
             this.txtAttendeeName.Text = "Attendee Name:";
             // 
@@ -324,7 +338,7 @@
             this.panel3.Controls.Add(this.txtNumOfTickets);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(395, 356);
+            this.panel3.Location = new System.Drawing.Point(395, 556);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(483, 185);
@@ -506,21 +520,57 @@
             this.pbxLogo.TabIndex = 7;
             this.pbxLogo.TabStop = false;
             // 
-            // timeStart
+            // listView1
             // 
-            this.timeStart.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timeStart.Location = new System.Drawing.Point(40, 362);
-            this.timeStart.Name = "timeStart";
-            this.timeStart.Size = new System.Drawing.Size(200, 26);
-            this.timeStart.TabIndex = 19;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.attendeeName,
+            this.attendeeEmail,
+            this.eventID,
+            this.attendID});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(19, 212);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(448, 199);
+            this.listView1.TabIndex = 6;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // timeEnd
+            // attendeeName
             // 
-            this.timeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timeEnd.Location = new System.Drawing.Point(40, 414);
-            this.timeEnd.Name = "timeEnd";
-            this.timeEnd.Size = new System.Drawing.Size(200, 26);
-            this.timeEnd.TabIndex = 20;
+            this.attendeeName.Text = "Name";
+            this.attendeeName.Width = 100;
+            // 
+            // attendeeEmail
+            // 
+            this.attendeeEmail.Text = "Email";
+            this.attendeeEmail.Width = 100;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(16, 106);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(122, 20);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Attendee Email:";
+            // 
+            // txtAttendeeEmail
+            // 
+            this.txtAttendeeEmail.Location = new System.Drawing.Point(19, 130);
+            this.txtAttendeeEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAttendeeEmail.Name = "txtAttendeeEmail";
+            this.txtAttendeeEmail.Size = new System.Drawing.Size(448, 26);
+            this.txtAttendeeEmail.TabIndex = 8;
+            this.txtAttendeeEmail.Text = "Attendee Email:";
+            // 
+            // eventID
+            // 
+            this.eventID.Text = "EventID";
+            this.eventID.Width = 20;
+            // 
+            // attendID
+            // 
+            this.attendID.Text = "ID";
             // 
             // ManageEvent
             // 
@@ -577,7 +627,6 @@
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.PictureBox pbxLogo;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label lblEmptyFieldsWarning;
         private System.Windows.Forms.Label lblValidNumWarning;
@@ -587,5 +636,12 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker timeEnd;
         private System.Windows.Forms.DateTimePicker timeStart;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader attendeeName;
+        private System.Windows.Forms.ColumnHeader attendeeEmail;
+        private System.Windows.Forms.TextBox txtAttendeeEmail;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ColumnHeader eventID;
+        private System.Windows.Forms.ColumnHeader attendID;
     }
 }
