@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,18 @@ namespace Eventesea
 {
     public partial class CreateEvent : Form
     {
+        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\\Users\\admin\\source\\repos\\Eventease-main\\Eventesea\\EventEaseDB.mdb");
+        OleDbDataAdapter da = new OleDbDataAdapter();
+        OleDbCommand cmd = new OleDbCommand();
         public CreateEvent()
         {
             InitializeComponent();
+            int currentUserID = UserSession.UserID;
+            string currentUserName = UserSession.UserName;
+            string currentUserFN = UserSession.UserFN;
+            string currentUserLN = UserSession.UserLN;
+            string currentUserEmail = UserSession.UserEmail;
+            string currentUserPass = UserSession.UserPass;
         }
 
         private void btnEventListing_Click(object sender, EventArgs e)
@@ -65,6 +75,9 @@ namespace Eventesea
                 lblEmptyFieldsWarning.Visible = true;
             }
             //insert into the database
+            con.Open();
+            string addEvent = "INSERT into Event_Database (Event_ID, User_ID, Event_Name, Event_Venue, Event_Address, Event_Host, Event_Date, Event_TimeStart, Event_TimeEnd)";
+
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -88,6 +101,11 @@ namespace Eventesea
             }
             lblValidNumWarning.Visible = false;
             //insert into database
+        }
+
+        private void CreateEvent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

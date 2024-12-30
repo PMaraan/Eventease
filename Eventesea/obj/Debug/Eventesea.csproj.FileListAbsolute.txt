@@ -26,3 +26,23 @@ C:\Users\Patrick Maraan\Desktop\GitHub_Projects\Eventease\Eventease\Eventesea\ob
 C:\Users\Patrick Maraan\Desktop\GitHub_Projects\Eventease\Eventease\Eventesea\obj\Debug\Eventesea.csproj.CoreCompileInputs.cache
 C:\Users\Patrick Maraan\Desktop\GitHub_Projects\Eventease\Eventease\Eventesea\obj\Debug\Eventesea.exe
 C:\Users\Patrick Maraan\Desktop\GitHub_Projects\Eventease\Eventease\Eventesea\obj\Debug\Eventesea.pdb
+C:\Users\admin\source\repos\Eventease-main\Eventesea\bin\Debug\EventEaseDB.mdb
+C:\Users\admin\source\repos\Eventease-main\Eventesea\bin\Debug\Eventesea.exe.config
+C:\Users\admin\source\repos\Eventease-main\Eventesea\bin\Debug\Eventesea.exe
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.Analysis.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.Calendar.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.CreateEvent.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.EventListing.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.Home.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.Index.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.ManageEvent.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.Notifications.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.Properties.Resources.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.LogIn.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.SignUp.resources
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.exe
+C:\Users\admin\source\repos\Eventease-main\Eventesea\obj\Debug\Eventesea.pdb
+C:\Users\admin\source\repos\Eventease-main\Eventesea\bin\Debug\Eventesea.pdb

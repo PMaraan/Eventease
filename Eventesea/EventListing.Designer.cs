@@ -56,9 +56,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.DarkGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(269, 88);
+            this.label1.Location = new System.Drawing.Point(303, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 32);
+            this.label1.Size = new System.Drawing.Size(214, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "List of Events";
             // 
@@ -67,9 +67,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.DarkGray;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(130, 138);
+            this.label2.Location = new System.Drawing.Point(146, 172);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 32);
+            this.label2.Size = new System.Drawing.Size(161, 38);
             this.label2.TabIndex = 3;
             this.label2.Text = "Event List";
             // 
@@ -78,9 +78,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.DarkGray;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(568, 138);
+            this.label3.Location = new System.Drawing.Point(639, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 32);
+            this.label3.Size = new System.Drawing.Size(86, 38);
             this.label3.TabIndex = 4;
             this.label3.Text = "Date";
             // 
@@ -88,15 +88,16 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.listBox1);
-            this.panel1.Location = new System.Drawing.Point(37, 184);
+            this.panel1.Location = new System.Drawing.Point(42, 230);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(349, 248);
+            this.panel1.Size = new System.Drawing.Size(393, 310);
             this.panel1.TabIndex = 5;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
+            this.listBox1.ItemHeight = 20;
             this.listBox1.Items.AddRange(new object[] {
             "Event 1",
             "Event 2",
@@ -104,24 +105,27 @@
             "Event 4",
             "Event 5",
             "Event 6"});
-            this.listBox1.Location = new System.Drawing.Point(20, 18);
+            this.listBox1.Location = new System.Drawing.Point(22, 22);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(311, 212);
+            this.listBox1.Size = new System.Drawing.Size(349, 264);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.Controls.Add(this.listBox2);
-            this.panel2.Location = new System.Drawing.Point(414, 189);
+            this.panel2.Location = new System.Drawing.Point(466, 236);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(366, 242);
+            this.panel2.Size = new System.Drawing.Size(412, 302);
             this.panel2.TabIndex = 6;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
+            this.listBox2.ItemHeight = 20;
             this.listBox2.Items.AddRange(new object[] {
             "01/01/01",
             "01/01/01",
@@ -129,9 +133,10 @@
             "01/01/01",
             "01/01/01",
             "01/01/01"});
-            this.listBox2.Location = new System.Drawing.Point(30, 18);
+            this.listBox2.Location = new System.Drawing.Point(34, 22);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(319, 212);
+            this.listBox2.Size = new System.Drawing.Size(358, 264);
             this.listBox2.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -156,11 +161,12 @@
             this.tableLayoutPanel1.Controls.Add(this.pbxLogo, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 69);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 86);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // btnEventListing
@@ -170,9 +176,10 @@
             this.btnEventListing.FlatAppearance.BorderSize = 0;
             this.btnEventListing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEventListing.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventListing.Location = new System.Drawing.Point(139, 3);
+            this.btnEventListing.Location = new System.Drawing.Point(156, 4);
+            this.btnEventListing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEventListing.Name = "btnEventListing";
-            this.btnEventListing.Size = new System.Drawing.Size(130, 63);
+            this.btnEventListing.Size = new System.Drawing.Size(147, 78);
             this.btnEventListing.TabIndex = 0;
             this.btnEventListing.Text = "Event Listing";
             this.btnEventListing.UseVisualStyleBackColor = false;
@@ -185,9 +192,10 @@
             this.btnCalendar.FlatAppearance.BorderSize = 0;
             this.btnCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalendar.Location = new System.Drawing.Point(275, 3);
+            this.btnCalendar.Location = new System.Drawing.Point(309, 4);
+            this.btnCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Size = new System.Drawing.Size(130, 63);
+            this.btnCalendar.Size = new System.Drawing.Size(147, 78);
             this.btnCalendar.TabIndex = 1;
             this.btnCalendar.Text = "Calendar";
             this.btnCalendar.UseVisualStyleBackColor = false;
@@ -199,9 +207,10 @@
             this.btnAnalysis.FlatAppearance.BorderSize = 0;
             this.btnAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnalysis.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalysis.Location = new System.Drawing.Point(411, 3);
+            this.btnAnalysis.Location = new System.Drawing.Point(462, 4);
+            this.btnAnalysis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAnalysis.Name = "btnAnalysis";
-            this.btnAnalysis.Size = new System.Drawing.Size(130, 63);
+            this.btnAnalysis.Size = new System.Drawing.Size(147, 78);
             this.btnAnalysis.TabIndex = 2;
             this.btnAnalysis.Text = "Analysis";
             this.btnAnalysis.UseVisualStyleBackColor = true;
@@ -213,9 +222,10 @@
             this.btnManage.FlatAppearance.BorderSize = 0;
             this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManage.Location = new System.Drawing.Point(547, 3);
+            this.btnManage.Location = new System.Drawing.Point(615, 4);
+            this.btnManage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnManage.Name = "btnManage";
-            this.btnManage.Size = new System.Drawing.Size(130, 63);
+            this.btnManage.Size = new System.Drawing.Size(147, 78);
             this.btnManage.TabIndex = 3;
             this.btnManage.Text = "Create Event";
             this.btnManage.UseVisualStyleBackColor = true;
@@ -225,27 +235,30 @@
             // 
             this.btnNotif.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNotif.Image = ((System.Drawing.Image)(resources.GetObject("btnNotif.Image")));
-            this.btnNotif.Location = new System.Drawing.Point(683, 3);
+            this.btnNotif.Location = new System.Drawing.Point(768, 4);
+            this.btnNotif.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNotif.Name = "btnNotif";
-            this.btnNotif.Size = new System.Drawing.Size(34, 63);
+            this.btnNotif.Size = new System.Drawing.Size(39, 78);
             this.btnNotif.TabIndex = 4;
             this.btnNotif.Text = "button5";
             this.btnNotif.UseVisualStyleBackColor = true;
             // 
             // btnSettings
             // 
-            this.btnSettings.Location = new System.Drawing.Point(723, 3);
+            this.btnSettings.Location = new System.Drawing.Point(813, 4);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(33, 23);
+            this.btnSettings.Size = new System.Drawing.Size(37, 29);
             this.btnSettings.TabIndex = 5;
             this.btnSettings.Text = "button6";
             this.btnSettings.UseVisualStyleBackColor = true;
             // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(763, 3);
+            this.btnUser.Location = new System.Drawing.Point(858, 4);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(34, 23);
+            this.btnUser.Size = new System.Drawing.Size(38, 29);
             this.btnUser.TabIndex = 6;
             this.btnUser.Text = "button7";
             this.btnUser.UseVisualStyleBackColor = true;
@@ -254,24 +267,26 @@
             // 
             this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
             this.pbxLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxLogo.InitialImage")));
-            this.pbxLogo.Location = new System.Drawing.Point(3, 3);
+            this.pbxLogo.Location = new System.Drawing.Point(3, 4);
+            this.pbxLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(129, 63);
+            this.pbxLogo.Size = new System.Drawing.Size(145, 78);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxLogo.TabIndex = 7;
             this.pbxLogo.TabStop = false;
             // 
             // EventListing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "EventListing";
             this.Text = "Event Listing";
             this.panel1.ResumeLayout(false);

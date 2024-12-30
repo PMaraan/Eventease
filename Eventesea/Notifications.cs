@@ -15,6 +15,17 @@ namespace Eventesea
         public Notifications()
         {
             InitializeComponent();
+            int currentUserID = UserSession.UserID;
+            string currentUserName = UserSession.UserName;
+            string currentUserFN = UserSession.UserFN;
+            string currentUserLN = UserSession.UserLN;
+            string currentUserEmail = UserSession.UserEmail;
+            string currentUserPass = UserSession.UserPass;
+        }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

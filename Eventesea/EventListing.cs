@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,19 @@ namespace Eventesea
 {
     public partial class EventListing : Form
     {
+        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\\Users\\admin\\source\\repos\\Eventease-main\\Eventesea\\EventEaseDB.mdb");
+        OleDbDataAdapter da = new OleDbDataAdapter();
+        OleDbCommand cmd = new OleDbCommand();
+
         public EventListing()
         {
             InitializeComponent();
+            int currentUserID = UserSession.UserID;
+            string currentUserName = UserSession.UserName;
+            string currentUserFN = UserSession.UserFN;
+            string currentUserLN = UserSession.UserLN;
+            string currentUserEmail = UserSession.UserEmail;
+            string currentUserPass = UserSession.UserPass;
         }
 
         private void btnEventListing_Click(object sender, EventArgs e)
@@ -55,6 +66,11 @@ namespace Eventesea
             CreateEvent createEvent = new CreateEvent();
             createEvent.Show();
             this.Hide();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
