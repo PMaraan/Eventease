@@ -17,6 +17,13 @@ namespace Eventesea
         OleDbDataAdapter da = new OleDbDataAdapter();
         OleDbCommand cmd = new OleDbCommand();
 
+        int eventSesID = EventSession.EventID;
+        string eventSesName = EventSession.EventName;
+        DateTime eventSesDate = EventSession.EventDate;
+        DateTime eventSesStart = EventSession.EventStart;
+        DateTime eventSesEnd = EventSession.EventEnd;
+        string eventSesTicket = EventSession.EventTicket;
+
         public EventListing()
         {
             InitializeComponent();
@@ -26,6 +33,32 @@ namespace Eventesea
             string currentUserLN = UserSession.UserLN;
             string currentUserEmail = UserSession.UserEmail;
             string currentUserPass = UserSession.UserPass;
+
+
+
+            con.Open();
+            string viewEvents = $"SELECT* FROM Event_Database where User_ID = {UserSession.UserID}";
+            da = new OleDbDataAdapter(viewEvents, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            listView1.Items.Clear();
+
+            foreach(DataRow dr in dt.Rows)
+            {
+                //format the date and time
+                DateTime eventDate = DateTime.Parse(dr["Event_Date"].ToString());
+                DateTime timeStart = DateTime.Parse(dr["Event_TimeStart"].ToString());
+                DateTime timeEnd = DateTime.Parse(dr["Event_TimeEnd"].ToString());
+
+                ListViewItem item = new ListViewItem(dr["Event_Name"].ToString());
+                item.SubItems.Add(eventDate.ToString("MM/dd/yyyy"));                
+                item.SubItems.Add(timeStart.ToString("HH:mm"));            
+                item.SubItems.Add(timeEnd.ToString("HH:mm"));
+                item.SubItems.Add(dr["Event_Tickets"].ToString());
+                item.SubItems.Add(dr["Event_ID"].ToString());
+                listView1.Items.Add(item);
+            }
+            con.Close();
         }
 
         private void btnEventListing_Click(object sender, EventArgs e)
@@ -68,9 +101,32 @@ namespace Eventesea
             this.Hide();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            if(listView1.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = listView1.SelectedItems[0];
 
+                eventSesName = selectedItem.SubItems[0].Text;
+                eventSesTicket = selectedItem.SubItems[4].Text;
+                
+                if(int.TryParse(selectedItem.SubItems[5].Text, out int eventID) && DateTime.TryParse(selectedItem.SubItems[1].Text, out DateTime eventDate) && DateTime.TryParse(selectedItem.SubItems[2].Text, out DateTime eventStart) && DateTime.TryParse(selectedItem.SubItems[3].Text, out DateTime eventEnd))
+                {
+                    eventSesID = eventID;
+                    eventSesDate = eventDate;
+                    eventSesStart = eventStart;
+                    eventSesEnd = eventEnd;
+                }
+
+                ManageEvent manage = new ManageEvent();
+                manage.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Select an event to manage!");
+            }
         }
+
     }
 }

@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventListing));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.eventName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.eventDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.timeStart = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.timeEnd = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ticketNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnEventListing = new System.Windows.Forms.Button();
             this.btnCalendar = new System.Windows.Forms.Button();
@@ -45,8 +46,9 @@
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.eventID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
@@ -62,82 +64,57 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "List of Events";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DarkGray;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(146, 172);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 38);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Event List";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.DarkGray;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(639, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 38);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Date";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.listBox1);
-            this.panel1.Location = new System.Drawing.Point(42, 230);
+            this.panel1.Controls.Add(this.listView1);
+            this.panel1.Location = new System.Drawing.Point(35, 186);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(393, 310);
+            this.panel1.Size = new System.Drawing.Size(827, 353);
             this.panel1.TabIndex = 5;
             // 
-            // listBox1
+            // listView1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Items.AddRange(new object[] {
-            "Event 1",
-            "Event 2",
-            "Event 3",
-            "Event 4",
-            "Event 5",
-            "Event 6"});
-            this.listBox1.Location = new System.Drawing.Point(22, 22);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(349, 264);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.eventName,
+            this.eventDate,
+            this.timeStart,
+            this.timeEnd,
+            this.ticketNum,
+            this.eventID});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(18, 26);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(787, 297);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // panel2
+            // eventName
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.listBox2);
-            this.panel2.Location = new System.Drawing.Point(466, 236);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(412, 302);
-            this.panel2.TabIndex = 6;
+            this.eventName.Text = "Event Name";
+            this.eventName.Width = 200;
             // 
-            // listBox2
+            // eventDate
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 20;
-            this.listBox2.Items.AddRange(new object[] {
-            "01/01/01",
-            "01/01/01",
-            "01/01/01",
-            "01/01/01",
-            "01/01/01",
-            "01/01/01"});
-            this.listBox2.Location = new System.Drawing.Point(34, 22);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(358, 264);
-            this.listBox2.TabIndex = 0;
+            this.eventDate.Text = "Event Date";
+            this.eventDate.Width = 70;
+            // 
+            // timeStart
+            // 
+            this.timeStart.Text = "Time Start";
+            this.timeStart.Width = 70;
+            // 
+            // timeEnd
+            // 
+            this.timeEnd.Text = "Time End";
+            this.timeEnd.Width = 70;
+            // 
+            // ticketNum
+            // 
+            this.ticketNum.Text = "Total Tickets";
+            this.ticketNum.Width = 100;
             // 
             // tableLayoutPanel1
             // 
@@ -275,22 +252,34 @@
             this.pbxLogo.TabIndex = 7;
             this.pbxLogo.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(64, 557);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(226, 45);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Manage Selected Event";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // eventID
+            // 
+            this.eventID.Text = "ID";
+            this.eventID.Width = 30;
+            // 
             // EventListing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(900, 614);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "EventListing";
             this.Text = "Event Listing";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.ResumeLayout(false);
@@ -300,12 +289,7 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnEventListing;
         private System.Windows.Forms.Button btnCalendar;
@@ -315,5 +299,13 @@
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.PictureBox pbxLogo;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader eventName;
+        private System.Windows.Forms.ColumnHeader eventDate;
+        private System.Windows.Forms.ColumnHeader timeStart;
+        private System.Windows.Forms.ColumnHeader timeEnd;
+        private System.Windows.Forms.ColumnHeader ticketNum;
+        private System.Windows.Forms.ColumnHeader eventID;
     }
 }

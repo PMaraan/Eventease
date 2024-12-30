@@ -16,4 +16,15 @@ namespace Eventesea
         public static string UserPass { get; set; }
 
     }
+
+    public static class EventSession
+    {
+        public static int EventID { get; set; }
+        public static string EventName { get; set; }
+        public static DateTime EventDate { get; set; }
+        public static DateTime EventStart { get; set; }
+        public static DateTime EventEnd { get; set; }
+        public static string EventTicket { get; set; }
+
+    }
 }

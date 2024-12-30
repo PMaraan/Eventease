@@ -16,6 +16,7 @@ namespace Eventesea
         OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\\Users\\admin\\source\\repos\\Eventease-main\\Eventesea\\EventEaseDB.mdb");
         OleDbDataAdapter da = new OleDbDataAdapter();
         OleDbCommand cmd = new OleDbCommand();
+
         public ManageEvent()
         {
             InitializeComponent();
@@ -25,6 +26,24 @@ namespace Eventesea
             string currentUserLN = UserSession.UserLN;
             string currentUserEmail = UserSession.UserEmail;
             string currentUserPass = UserSession.UserPass;
+
+            int eventSesID = EventSession.EventID;
+            string eventSesName = EventSession.EventName;
+            DateTime eventSesDate = EventSession.EventDate;
+            DateTime eventSesStart = EventSession.EventStart;
+            DateTime eventSesEnd = EventSession.EventEnd;
+            string eventSesTicket = EventSession.EventTicket;
+
+            con.Open();
+            string searchEvent = $"SELECT* FROM Event_Database where Event_ID = {eventSesID}";
+            cmd = new OleDbCommand(searchEvent, con);
+
+            con.Close();
+            txtEventName.Text = eventSesName;
+            txtNumOfTickets.Text = eventSesTicket;
+            timeStart.Value = eventSesStart;
+            timeEnd.Value = eventSesEnd;
+            
         }
 
         private void btnEventListing_Click(object sender, EventArgs e)
@@ -88,11 +107,6 @@ namespace Eventesea
             {
                 lblEmptyFieldsWarning.Visible = true;
             }
-            //update the database
-        }
-
-        private void btnRegisterTickets_Click(object sender, EventArgs e)
-        {
             //check if input is an integer
             if (!int.TryParse(txtNumOfTickets.Text, out int num))
             {
@@ -106,7 +120,10 @@ namespace Eventesea
                 return;
             }
             lblValidNumWarning.Visible = false;
-            //insert into database
+
+            //update the database
+
         }
+
     }
 }

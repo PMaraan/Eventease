@@ -305,7 +305,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 26);
+            this.label2.Location = new System.Drawing.Point(5, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(246, 29);
             this.label2.TabIndex = 0;
@@ -336,7 +336,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(262, 14);
+            this.monthCalendar1.Location = new System.Drawing.Point(245, 20);
             this.monthCalendar1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
