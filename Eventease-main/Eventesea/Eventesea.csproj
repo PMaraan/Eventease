@@ -76,6 +76,7 @@
     <Compile Include="EventListing.Designer.cs">
       <DependentUpon>EventListing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
