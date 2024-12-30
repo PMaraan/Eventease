@@ -3,23 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\eventesea\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventease-main\\eventesea\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventease-main\\eventesea\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventease-main\\eventesea\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\eventesea\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventease-main\\eventesea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\eventesea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|c:\\users\\patrick maraan\\desktop\\github_projects\\eventease\\eventease\\eventease-main\\eventesea\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\eventesea\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{45E8D16D-DBA7-4D6C-B4DB-FE2932801475}|Eventesea\\Eventesea.csproj|solutionrelative:eventesea\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,26 +42,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Globals.cs",
               "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\Eventesea\\Globals.cs",
               "RelativeDocumentMoniker": "Eventesea\\Globals.cs",
               "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\Eventesea\\Globals.cs",
               "RelativeToolTip": "Eventesea\\Globals.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T14:55:11.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LogIn.cs",
               "DocumentMoniker": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\Eventesea\\LogIn.cs",
               "RelativeDocumentMoniker": "Eventesea\\LogIn.cs",
               "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\Eventesea\\LogIn.cs",
               "RelativeToolTip": "Eventesea\\LogIn.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwA8AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T12:51:57.816Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\Eventesea\\LogIn.cs [Design]",
               "RelativeToolTip": "Eventesea\\LogIn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:51:35.059Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-30T12:51:35.059Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Eventesea\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:50:26.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T12:50:26.011Z"
             },
             {
               "$type": "Document",
@@ -99,7 +97,7 @@
               "RelativeDocumentMoniker": "Eventesea\\SignUp.cs",
               "ToolTip": "C:\\Users\\Patrick Maraan\\Desktop\\GitHub_Projects\\Eventease\\Eventease\\Eventease-main\\Eventesea\\SignUp.cs",
               "RelativeToolTip": "Eventesea\\SignUp.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T12:22:34.727Z",
               "EditorCaption": ""

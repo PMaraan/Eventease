@@ -13,11 +13,7 @@ namespace Eventesea
 {
     public partial class LogIn : Form
     {
-        //string conStr = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + Properties.Resources.EventEaseDB;
-        //OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\\Users\\admin\\source\\repos\\Eventease-main\\Eventesea\\EventEaseDB.mdb");
-        //OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=|DataDirectory|\EventEaseDB.mdb");
         OleDbConnection con = new OleDbConnection(Globals.dbConnectionString);
-        //OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source=EventEaseDB");
         OleDbDataAdapter da = new OleDbDataAdapter();
         OleDbCommand cmd = new OleDbCommand();
         
