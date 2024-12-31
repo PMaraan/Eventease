@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnReturn = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblPasswordWarning = new System.Windows.Forms.Label();
             this.lblEmptyFieldWarning = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -42,6 +40,8 @@
             this.txtFirst = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,42 +61,19 @@
             this.panel1.Controls.Add(this.txtFirst);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(34, 23);
+            this.panel1.Location = new System.Drawing.Point(38, 29);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(719, 392);
+            this.panel1.Size = new System.Drawing.Size(809, 490);
             this.panel1.TabIndex = 0;
-            // 
-            // btnReturn
-            // 
-            this.btnReturn.BackColor = System.Drawing.Color.Black;
-            this.btnReturn.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnReturn.Location = new System.Drawing.Point(516, 338);
-            this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(173, 35);
-            this.btnReturn.TabIndex = 12;
-            this.btnReturn.Text = "Back";
-            this.btnReturn.UseVisualStyleBackColor = false;
-            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(516, 250);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(125, 20);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "Show Password";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // lblPasswordWarning
             // 
             this.lblPasswordWarning.AutoSize = true;
             this.lblPasswordWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblPasswordWarning.Location = new System.Drawing.Point(34, 366);
+            this.lblPasswordWarning.Location = new System.Drawing.Point(38, 458);
             this.lblPasswordWarning.Name = "lblPasswordWarning";
-            this.lblPasswordWarning.Size = new System.Drawing.Size(165, 16);
+            this.lblPasswordWarning.Size = new System.Drawing.Size(196, 20);
             this.lblPasswordWarning.TabIndex = 10;
             this.lblPasswordWarning.Text = "*Passwords doesn\'t match";
             this.lblPasswordWarning.Visible = false;
@@ -105,9 +82,9 @@
             // 
             this.lblEmptyFieldWarning.AutoSize = true;
             this.lblEmptyFieldWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblEmptyFieldWarning.Location = new System.Drawing.Point(32, 338);
+            this.lblEmptyFieldWarning.Location = new System.Drawing.Point(36, 422);
             this.lblEmptyFieldWarning.Name = "lblEmptyFieldWarning";
-            this.lblEmptyFieldWarning.Size = new System.Drawing.Size(219, 16);
+            this.lblEmptyFieldWarning.Size = new System.Drawing.Size(262, 20);
             this.lblEmptyFieldWarning.TabIndex = 9;
             this.lblEmptyFieldWarning.Text = "*Make sure ther are no empty fields.";
             this.lblEmptyFieldWarning.Visible = false;
@@ -116,9 +93,10 @@
             // 
             this.btnRegister.BackColor = System.Drawing.Color.Black;
             this.btnRegister.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegister.Location = new System.Drawing.Point(516, 297);
+            this.btnRegister.Location = new System.Drawing.Point(581, 371);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(173, 35);
+            this.btnRegister.Size = new System.Drawing.Size(195, 44);
             this.btnRegister.TabIndex = 8;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -126,60 +104,66 @@
             // 
             // txtConfPass
             // 
-            this.txtConfPass.Location = new System.Drawing.Point(45, 297);
+            this.txtConfPass.Location = new System.Drawing.Point(29, 371);
+            this.txtConfPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtConfPass.Name = "txtConfPass";
             this.txtConfPass.PasswordChar = '*';
-            this.txtConfPass.Size = new System.Drawing.Size(450, 22);
+            this.txtConfPass.Size = new System.Drawing.Size(526, 26);
             this.txtConfPass.TabIndex = 7;
             this.txtConfPass.Text = "Confirm Password";
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(45, 248);
+            this.txtPass.Location = new System.Drawing.Point(35, 310);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(449, 22);
+            this.txtPass.Size = new System.Drawing.Size(522, 26);
             this.txtPass.TabIndex = 6;
             this.txtPass.Text = "Password";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(45, 203);
+            this.txtEmail.Location = new System.Drawing.Point(36, 254);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(450, 22);
+            this.txtEmail.Size = new System.Drawing.Size(520, 26);
             this.txtEmail.TabIndex = 5;
             this.txtEmail.Text = "E-Mail Address";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(45, 158);
+            this.txtUsername.Location = new System.Drawing.Point(39, 200);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(450, 22);
+            this.txtUsername.Size = new System.Drawing.Size(518, 26);
             this.txtUsername.TabIndex = 4;
             this.txtUsername.Text = "Username";
             // 
             // txtLast
             // 
-            this.txtLast.Location = new System.Drawing.Point(288, 118);
+            this.txtLast.Location = new System.Drawing.Point(288, 148);
+            this.txtLast.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLast.Name = "txtLast";
-            this.txtLast.Size = new System.Drawing.Size(206, 22);
+            this.txtLast.Size = new System.Drawing.Size(260, 26);
             this.txtLast.TabIndex = 3;
             this.txtLast.Text = "Last Name";
             // 
             // txtFirst
             // 
-            this.txtFirst.Location = new System.Drawing.Point(45, 118);
+            this.txtFirst.Location = new System.Drawing.Point(42, 149);
+            this.txtFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFirst.Name = "txtFirst";
-            this.txtFirst.Size = new System.Drawing.Size(206, 22);
+            this.txtFirst.Size = new System.Drawing.Size(223, 26);
             this.txtFirst.TabIndex = 2;
             this.txtFirst.Text = "First Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 87);
+            this.label2.Location = new System.Drawing.Point(47, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 16);
+            this.label2.Size = new System.Drawing.Size(307, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Fill in the form below to get instant access:";
             // 
@@ -187,19 +171,44 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 38);
+            this.label1.Location = new System.Drawing.Point(43, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 38);
+            this.label1.Size = new System.Drawing.Size(265, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign Up Now";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(581, 312);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(148, 24);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "Show Password";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.BackColor = System.Drawing.Color.Black;
+            this.btnReturn.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnReturn.Location = new System.Drawing.Point(581, 423);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(195, 44);
+            this.btnReturn.TabIndex = 12;
+            this.btnReturn.Text = "Back";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // SignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SignUp";
             this.Text = "SignUp";
             this.panel1.ResumeLayout(false);

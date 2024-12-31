@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogIn = new System.Windows.Forms.Button();
+            this.btnFB = new System.Windows.Forms.Button();
+            this.btnEmail = new System.Windows.Forms.Button();
+            this.btnLinkedIn = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,20 +44,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.btnSignUp);
             this.panel1.Controls.Add(this.btnLogIn);
+            this.panel1.Controls.Add(this.btnFB);
+            this.panel1.Controls.Add(this.btnEmail);
+            this.panel1.Controls.Add(this.btnLinkedIn);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.label6);
@@ -75,50 +71,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(678, 396);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(209, 84);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(56, 62);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(126, 84);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 62);
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(51, 84);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(140, 245);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(148, 24);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "Show Password";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // btnSignUp
             // 
@@ -145,6 +97,36 @@
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = false;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
+            // 
+            // btnFB
+            // 
+            this.btnFB.Location = new System.Drawing.Point(224, 85);
+            this.btnFB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFB.Name = "btnFB";
+            this.btnFB.Size = new System.Drawing.Size(56, 62);
+            this.btnFB.TabIndex = 12;
+            this.btnFB.Text = "button3";
+            this.btnFB.UseVisualStyleBackColor = true;
+            // 
+            // btnEmail
+            // 
+            this.btnEmail.Location = new System.Drawing.Point(140, 81);
+            this.btnEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEmail.Name = "btnEmail";
+            this.btnEmail.Size = new System.Drawing.Size(56, 62);
+            this.btnEmail.TabIndex = 11;
+            this.btnEmail.Text = "button2";
+            this.btnEmail.UseVisualStyleBackColor = true;
+            // 
+            // btnLinkedIn
+            // 
+            this.btnLinkedIn.Location = new System.Drawing.Point(48, 81);
+            this.btnLinkedIn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLinkedIn.Name = "btnLinkedIn";
+            this.btnLinkedIn.Size = new System.Drawing.Size(56, 62);
+            this.btnLinkedIn.TabIndex = 10;
+            this.btnLinkedIn.Text = "button1";
+            this.btnLinkedIn.UseVisualStyleBackColor = true;
             // 
             // txtPassword
             // 
@@ -241,6 +223,17 @@
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(140, 245);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(148, 24);
+            this.checkBox1.TabIndex = 15;
+            this.checkBox1.Text = "Show Password";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -253,9 +246,6 @@
             this.Text = "Log In";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,6 +255,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.Button btnFB;
+        private System.Windows.Forms.Button btnEmail;
+        private System.Windows.Forms.Button btnLinkedIn;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
@@ -276,8 +269,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
