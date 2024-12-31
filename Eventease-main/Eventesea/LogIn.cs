@@ -13,15 +13,12 @@ namespace Eventesea
 {
     public partial class LogIn : Form
     {
-        OleDbConnection con = new OleDbConnection(Globals.dbConnectionString);
+        OleDbConnection con = new OleDbConnection(Global.dbConnectionString);
         OleDbDataAdapter da = new OleDbDataAdapter();
         OleDbCommand cmd = new OleDbCommand();
-        
         public LogIn()
         {
             InitializeComponent();
-            //MessageBox.Show("DB path: " +  Properties.Resources.EventEaseDB);
-            
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)

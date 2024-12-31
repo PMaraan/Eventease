@@ -76,7 +76,55 @@
     <Compile Include="EventListing.Designer.cs">
       <DependentUpon>EventListing.cs</DependentUpon>
     </Compile>
-    <Compile Include="Globals.cs" />
+    <Compile Include="Settings_DataExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_DataExport.Designer.cs">
+      <DependentUpon>Settings_DataExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings_CalendarPreferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_CalendarPreferences.Designer.cs">
+      <DependentUpon>Settings_CalendarPreferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings_AccountSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_AccountSecurity.Designer.cs">
+      <DependentUpon>Settings_AccountSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings_LanguageandDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_LanguageandDate.Designer.cs">
+      <DependentUpon>Settings_LanguageandDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings_DesignTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_DesignTheme.Designer.cs">
+      <DependentUpon>Settings_DesignTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgBoxAddAttendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxAddAttendee.Designer.cs">
+      <DependentUpon>MsgBoxAddAttendee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgBoxRemoveAttendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxRemoveAttendee.Designer.cs">
+      <DependentUpon>MsgBoxRemoveAttendee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +176,30 @@
     <EmbeddedResource Include="EventListing.resx">
       <DependentUpon>EventListing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Settings_DataExport.resx">
+      <DependentUpon>Settings_DataExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_AccountSecurity.resx">
+      <DependentUpon>Settings_AccountSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_CalendarPreferences.resx">
+      <DependentUpon>Settings_CalendarPreferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_LanguageandDate.resx">
+      <DependentUpon>Settings_LanguageandDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_DesignTheme.resx">
+      <DependentUpon>Settings_DesignTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxAddAttendee.resx">
+      <DependentUpon>MsgBoxAddAttendee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxRemoveAttendee.resx">
+      <DependentUpon>MsgBoxRemoveAttendee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,7 +220,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>

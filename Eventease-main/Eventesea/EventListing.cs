@@ -13,7 +13,7 @@ namespace Eventesea
 {
     public partial class EventListing : Form
     {
-        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\\Users\\admin\\source\\repos\\Eventease-main\\Eventesea\\EventEaseDB.mdb");
+        OleDbConnection con = new OleDbConnection(Global.dbConnectionString);
         OleDbDataAdapter da = new OleDbDataAdapter();
         OleDbCommand cmd = new OleDbCommand();
 
@@ -26,6 +26,30 @@ namespace Eventesea
             string currentUserLN = UserSession.UserLN;
             string currentUserEmail = UserSession.UserEmail;
             string currentUserPass = UserSession.UserPass;
+
+            con.Open();
+            string viewEvents = $"SELECT* FROM Event_Database where User_ID = {UserSession.UserID}";
+            da = new OleDbDataAdapter(viewEvents, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            listView1.Items.Clear();
+
+            foreach(DataRow dr in dt.Rows)
+            {
+                //format the date and time
+                DateTime eventDate = DateTime.Parse(dr["Event_Date"].ToString());
+                DateTime timeStart = DateTime.Parse(dr["Event_TimeStart"].ToString());
+                DateTime timeEnd = DateTime.Parse(dr["Event_TimeEnd"].ToString());
+
+                ListViewItem item = new ListViewItem(dr["Event_Name"].ToString());
+                item.SubItems.Add(eventDate.ToString("MM/dd/yyyy"));                
+                item.SubItems.Add(timeStart.ToString("HH:mm"));            
+                item.SubItems.Add(timeEnd.ToString("HH:mm"));
+                item.SubItems.Add(dr["Event_Tickets"].ToString());
+                item.SubItems.Add(dr["Event_ID"].ToString());
+                listView1.Items.Add(item);
+            }
+            con.Close();
         }
 
         private void btnEventListing_Click(object sender, EventArgs e)
@@ -68,9 +92,36 @@ namespace Eventesea
             this.Hide();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            //creates an event session so the selected event is also applied in the manage event page
+            if(listView1.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = listView1.SelectedItems[0];
 
+                EventSession.EventName = selectedItem.SubItems[0].Text;
+                EventSession.EventTicket = selectedItem.SubItems[4].Text;
+                
+                if(int.TryParse(selectedItem.SubItems[5].Text, out int eventID) && 
+                    DateTime.TryParse(selectedItem.SubItems[1].Text, out DateTime eventDate) && 
+                    DateTime.TryParse(selectedItem.SubItems[2].Text, out DateTime eventStart) && 
+                    DateTime.TryParse(selectedItem.SubItems[3].Text, out DateTime eventEnd))
+                {
+                    EventSession.EventID = eventID;
+                    EventSession.EventDate = eventDate.ToString();
+                    EventSession.EventStart = eventStart.ToString();
+                    EventSession.EventEnd = eventEnd.ToString();
+                }
+
+                ManageEvent manage = new ManageEvent();
+                manage.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Select an event to manage!");
+            }
         }
+
     }
 }
