@@ -39,65 +39,22 @@ namespace Eventesea
 
         private void btnYes_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //delete attendee and calculate tickets
-                using (OleDbConnection con = new OleDbConnection(Global.dbConnectionString))
-                {
-                    con.Open();
-                    string deleteAttend = $"DELETE FROM Attendee_Database WHERE Attendee_ID = {AttendeeSession.AttendeeID}";
-                    using (OleDbCommand cmd = new OleDbCommand(deleteAttend, con))
-                    {
-                        cmd.ExecuteNonQuery();
-                    }
+            con.Open();
+            string deleteAttend = $"DELETE FROM Attendee_Database WHERE Attendee_ID = {AttendeeSession.AttendeeID}";
+            cmd = new OleDbCommand(deleteAttend, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
 
-                }
-        
-                //refresh attendee list
-                manageEvent.LoadAttendees();
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred while removing the attendee: {ex.Message}");
-            }
+            //reload the listview
+            manageEvent.LoadAttendees();
+
+            this.Close();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
         {
+            //cancels operation and returns to the manage event page
             this.Close();
         }
     }
 }
-
-
-////This code will iterate the user_ID per registration
-//con.Open();
-//int newAttendeeID = 1;
-//string queryLastID = "SELECT MAX(Attendee_ID) FROM Attendee_Database";
-//cmd = new OleDbCommand(queryLastID, con);
-//var maxID = cmd.ExecuteScalar();
-//newAttendeeID = (maxID != DBNull.Value) ? Convert.ToInt32(maxID) + 1 : 1;
-//con.Close();
-
-////insert into database
-//con.Open();
-//string addAttendee = $"INSERT INTO Attendee_Database (Attendee_ID, Attendee_Name, Attendee_Email, Event_ID) VALUES " +
-//    $"({newAttendeeID}, '{AttendeeSession.AttendeeName}', '{AttendeeSession.AttendeeEmail}', {EventSession.EventID})";
-//cmd = new OleDbCommand(addAttendee, con);
-//cmd.ExecuteNonQuery();
-//con.Close();
-
-////insert into tickets database for iteratioon
-//con.Open();
-//int newTicketID = getTicketID();
-//string addTicket = $"INSERT INTO TicketSales_Rec (Ticket_ID, Attendee_ID, Event_ID) VALUES " +
-//    $"({newTicketID}, {newAttendeeID}, {EventSession.EventID})";
-//cmd = new OleDbCommand(addTicket, con);
-//cmd.ExecuteNonQuery();
-//TicketSession.TicketID = newTicketID;
-//con.Close();
-
-////reload the listview
-//manageEvent.LoadAttendees();
-//this.Close();
