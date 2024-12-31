@@ -15,6 +15,12 @@ namespace Eventesea
         public Calendar()
         {
             InitializeComponent();
+            int currentUserID = UserSession.UserID;
+            string currentUserName = UserSession.UserName;
+            string currentUserFN = UserSession.UserFN;
+            string currentUserLN = UserSession.UserLN;
+            string currentUserEmail = UserSession.UserEmail;
+            string currentUserPass = UserSession.UserPass;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -55,6 +61,16 @@ namespace Eventesea
             CreateEvent createEvent = new CreateEvent();
             createEvent.Show();
             this.Hide();
+        }
+
+        private void cdrCalendar_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void Calendar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

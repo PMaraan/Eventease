@@ -44,11 +44,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.btnSignUp);
             this.panel1.Controls.Add(this.btnLogIn);
             this.panel1.Controls.Add(this.btnFB);
@@ -64,18 +66,20 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.splitter1);
-            this.panel1.Location = new System.Drawing.Point(95, 62);
+            this.panel1.Location = new System.Drawing.Point(107, 78);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 317);
+            this.panel1.Size = new System.Drawing.Size(678, 396);
             this.panel1.TabIndex = 0;
             // 
             // btnSignUp
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.Black;
             this.btnSignUp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSignUp.Location = new System.Drawing.Point(386, 189);
+            this.btnSignUp.Location = new System.Drawing.Point(434, 236);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(138, 33);
+            this.btnSignUp.Size = new System.Drawing.Size(155, 41);
             this.btnSignUp.TabIndex = 14;
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.UseVisualStyleBackColor = false;
@@ -85,9 +89,10 @@
             // 
             this.btnLogIn.BackColor = System.Drawing.Color.Black;
             this.btnLogIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLogIn.Location = new System.Drawing.Point(96, 265);
+            this.btnLogIn.Location = new System.Drawing.Point(108, 331);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(125, 34);
+            this.btnLogIn.Size = new System.Drawing.Size(141, 42);
             this.btnLogIn.TabIndex = 13;
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = false;
@@ -95,52 +100,57 @@
             // 
             // btnFB
             // 
-            this.btnFB.Location = new System.Drawing.Point(199, 68);
+            this.btnFB.Location = new System.Drawing.Point(224, 85);
+            this.btnFB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFB.Name = "btnFB";
-            this.btnFB.Size = new System.Drawing.Size(50, 50);
+            this.btnFB.Size = new System.Drawing.Size(56, 62);
             this.btnFB.TabIndex = 12;
             this.btnFB.Text = "button3";
             this.btnFB.UseVisualStyleBackColor = true;
             // 
             // btnEmail
             // 
-            this.btnEmail.Location = new System.Drawing.Point(124, 65);
+            this.btnEmail.Location = new System.Drawing.Point(140, 81);
+            this.btnEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEmail.Name = "btnEmail";
-            this.btnEmail.Size = new System.Drawing.Size(50, 50);
+            this.btnEmail.Size = new System.Drawing.Size(56, 62);
             this.btnEmail.TabIndex = 11;
             this.btnEmail.Text = "button2";
             this.btnEmail.UseVisualStyleBackColor = true;
             // 
             // btnLinkedIn
             // 
-            this.btnLinkedIn.Location = new System.Drawing.Point(43, 65);
+            this.btnLinkedIn.Location = new System.Drawing.Point(48, 81);
+            this.btnLinkedIn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLinkedIn.Name = "btnLinkedIn";
-            this.btnLinkedIn.Size = new System.Drawing.Size(50, 50);
+            this.btnLinkedIn.Size = new System.Drawing.Size(56, 62);
             this.btnLinkedIn.TabIndex = 10;
             this.btnLinkedIn.Text = "button1";
             this.btnLinkedIn.UseVisualStyleBackColor = true;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(61, 221);
+            this.txtPassword.Location = new System.Drawing.Point(69, 276);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(200, 22);
+            this.txtPassword.Size = new System.Drawing.Size(224, 26);
             this.txtPassword.TabIndex = 9;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(60, 166);
+            this.txtEmail.Location = new System.Drawing.Point(68, 208);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(201, 22);
+            this.txtEmail.Size = new System.Drawing.Size(226, 26);
             this.txtEmail.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(333, 137);
+            this.label6.Location = new System.Drawing.Point(375, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(250, 16);
+            this.label6.Size = new System.Drawing.Size(302, 20);
             this.label6.TabIndex = 7;
             this.label6.Text = "Sign up if you still don\'t have an account...";
             // 
@@ -148,9 +158,9 @@
             // 
             this.lblForgot.AutoSize = true;
             this.lblForgot.LinkColor = System.Drawing.Color.Black;
-            this.lblForgot.Location = new System.Drawing.Point(71, 246);
+            this.lblForgot.Location = new System.Drawing.Point(80, 308);
             this.lblForgot.Name = "lblForgot";
-            this.lblForgot.Size = new System.Drawing.Size(145, 16);
+            this.lblForgot.Size = new System.Drawing.Size(172, 20);
             this.lblForgot.TabIndex = 6;
             this.lblForgot.TabStop = true;
             this.lblForgot.Text = "Forgot your Password?";
@@ -159,9 +169,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(364, 34);
+            this.label5.Location = new System.Drawing.Point(410, 42);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 84);
+            this.label5.Size = new System.Drawing.Size(207, 104);
             this.label5.TabIndex = 5;
             this.label5.Text = "Create,\r\nAccount!";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,27 +179,27 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 197);
+            this.label4.Location = new System.Drawing.Point(47, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Password";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 147);
+            this.label3.Location = new System.Drawing.Point(47, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 16);
+            this.label3.Size = new System.Drawing.Size(111, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Email Address";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 121);
+            this.label2.Location = new System.Drawing.Point(47, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 16);
+            this.label2.Size = new System.Drawing.Size(231, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Or Sign in using E-Mail Address";
             // 
@@ -197,9 +207,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 11);
+            this.label1.Location = new System.Drawing.Point(86, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 42);
+            this.label1.Size = new System.Drawing.Size(153, 52);
             this.label1.TabIndex = 1;
             this.label1.Text = "Log In";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -207,18 +217,31 @@
             // splitter1
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(292, 317);
+            this.splitter1.Size = new System.Drawing.Size(328, 396);
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(140, 245);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(148, 24);
+            this.checkBox1.TabIndex = 15;
+            this.checkBox1.Text = "Show Password";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "LogIn";
             this.Text = "Log In";
             this.panel1.ResumeLayout(false);
@@ -245,5 +268,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
