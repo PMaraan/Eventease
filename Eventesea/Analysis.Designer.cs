@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Analysis));
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblTicketUnsold = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblTicketSold = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblAttenNum = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -52,6 +52,7 @@
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.eventEaseDBDataSet = new Eventesea.EventEaseDBDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,28 +61,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventEaseDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(375, 239);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(852, 552);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Gray;
+            this.comboBox1.BackColor = System.Drawing.Color.White;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(375, 190);
@@ -89,13 +91,13 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 37);
             this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "Event 1";
+            this.comboBox1.Text = "Your Events";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.lblTicketUnsold);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(17, 448);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -103,23 +105,23 @@
             this.panel1.Size = new System.Drawing.Size(311, 121);
             this.panel1.TabIndex = 6;
             // 
-            // label7
+            // lblTicketUnsold
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(40, 55);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 38);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "50";
+            this.lblTicketUnsold.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTicketUnsold.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTicketUnsold.Location = new System.Drawing.Point(21, 50);
+            this.lblTicketUnsold.Name = "lblTicketUnsold";
+            this.lblTicketUnsold.Size = new System.Drawing.Size(260, 38);
+            this.lblTicketUnsold.TabIndex = 1;
+            this.lblTicketUnsold.Text = "0";
+            this.lblTicketUnsold.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 12);
+            this.label4.Location = new System.Drawing.Point(51, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(200, 25);
             this.label4.TabIndex = 0;
@@ -128,7 +130,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.lblTicketSold);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(17, 319);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -136,23 +138,23 @@
             this.panel2.Size = new System.Drawing.Size(311, 121);
             this.panel2.TabIndex = 7;
             // 
-            // label6
+            // lblTicketSold
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(40, 49);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 38);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "261";
+            this.lblTicketSold.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTicketSold.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTicketSold.Location = new System.Drawing.Point(20, 49);
+            this.lblTicketSold.Name = "lblTicketSold";
+            this.lblTicketSold.Size = new System.Drawing.Size(261, 38);
+            this.lblTicketSold.TabIndex = 1;
+            this.lblTicketSold.Text = "0";
+            this.lblTicketSold.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 12);
+            this.label3.Location = new System.Drawing.Point(60, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(190, 25);
             this.label3.TabIndex = 0;
@@ -161,7 +163,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lblAttenNum);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(15, 190);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -169,23 +171,23 @@
             this.panel3.Size = new System.Drawing.Size(313, 121);
             this.panel3.TabIndex = 8;
             // 
-            // label5
+            // lblAttenNum
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 55);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 38);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "221";
+            this.lblAttenNum.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblAttenNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAttenNum.Location = new System.Drawing.Point(29, 49);
+            this.lblAttenNum.Name = "lblAttenNum";
+            this.lblAttenNum.Size = new System.Drawing.Size(254, 38);
+            this.lblAttenNum.TabIndex = 1;
+            this.lblAttenNum.Text = "0";
+            this.lblAttenNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 14);
+            this.label2.Location = new System.Drawing.Point(62, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 25);
             this.label2.TabIndex = 0;
@@ -329,6 +331,11 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
+            // eventEaseDBDataSet
+            // 
+            this.eventEaseDBDataSet.DataSetName = "EventEaseDBDataSet";
+            this.eventEaseDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Analysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -356,6 +363,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventEaseDBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,13 +373,13 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblTicketUnsold;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblTicketSold;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblAttenNum;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -382,5 +390,6 @@
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private EventEaseDBDataSet eventEaseDBDataSet;
     }
 }

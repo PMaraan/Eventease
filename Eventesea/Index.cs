@@ -144,7 +144,6 @@ namespace Eventesea
                         // Calculate unsold tickets
                         int ticketsUnsold = ticketMax - ticketsSold;
 
-                        // Display the results (modify this part to update your UI)
                         lblTicketSales.Text = $"{ticketsSold}";
                         lblTicketUnsold.Text = $"{ticketsUnsold}";
                     }
