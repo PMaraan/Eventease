@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,19 @@ namespace Eventesea
 {
     public partial class Index : Form
     {
+        OleDbConnection con = new OleDbConnection(Global.dbConnectionString);
+        OleDbDataAdapter da = new OleDbDataAdapter();
+        OleDbCommand cmd = new OleDbCommand();
         public Index()
         {
             InitializeComponent();
+            int currentUserID = UserSession.UserID;
+            string currentUserName = UserSession.UserName;
+            string currentUserFN = UserSession.UserFN;
+            string currentUserLN = UserSession.UserLN;
+            string currentUserEmail = UserSession.UserEmail;
+            string currentUserPass = UserSession.UserPass;
+            USERNAME.Text = $"Welcome, {UserSession.UserName}";
         }
 
         private void button1_Click(object sender, EventArgs e)

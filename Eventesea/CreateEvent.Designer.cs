@@ -34,21 +34,23 @@
             this.btnCalendar = new System.Windows.Forms.Button();
             this.btnAnalysis = new System.Windows.Forms.Button();
             this.btnManage = new System.Windows.Forms.Button();
-            this.btnNotif = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnUser = new System.Windows.Forms.Button();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnRegisterTickets = new System.Windows.Forms.Button();
+            this.lblValidNumWarning = new System.Windows.Forms.Label();
             this.txtNumOfTickets = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.txtAttendeeName = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timeEnd = new System.Windows.Forms.DateTimePicker();
+            this.timeStart = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblEmptyFieldsWarning = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
             this.txtHost = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -59,12 +61,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblEmptyFieldsWarning = new System.Windows.Forms.Label();
-            this.lblValidNumWarning = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,17 +86,18 @@
             this.tableLayoutPanel1.Controls.Add(this.btnCalendar, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnAnalysis, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnManage, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnNotif, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnSettings, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnUser, 7, 0);
             this.tableLayoutPanel1.Controls.Add(this.pbxLogo, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 7, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 69);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1340, 86);
             this.tableLayoutPanel1.TabIndex = 12;
             // 
             // btnEventListing
@@ -104,9 +107,10 @@
             this.btnEventListing.FlatAppearance.BorderSize = 0;
             this.btnEventListing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEventListing.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventListing.Location = new System.Drawing.Point(139, 3);
+            this.btnEventListing.Location = new System.Drawing.Point(230, 4);
+            this.btnEventListing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEventListing.Name = "btnEventListing";
-            this.btnEventListing.Size = new System.Drawing.Size(130, 63);
+            this.btnEventListing.Size = new System.Drawing.Size(221, 78);
             this.btnEventListing.TabIndex = 0;
             this.btnEventListing.Text = "Event Listing";
             this.btnEventListing.UseVisualStyleBackColor = false;
@@ -119,9 +123,10 @@
             this.btnCalendar.FlatAppearance.BorderSize = 0;
             this.btnCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalendar.Location = new System.Drawing.Point(275, 3);
+            this.btnCalendar.Location = new System.Drawing.Point(457, 4);
+            this.btnCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Size = new System.Drawing.Size(130, 63);
+            this.btnCalendar.Size = new System.Drawing.Size(221, 78);
             this.btnCalendar.TabIndex = 1;
             this.btnCalendar.Text = "Calendar";
             this.btnCalendar.UseVisualStyleBackColor = false;
@@ -133,9 +138,10 @@
             this.btnAnalysis.FlatAppearance.BorderSize = 0;
             this.btnAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnalysis.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalysis.Location = new System.Drawing.Point(411, 3);
+            this.btnAnalysis.Location = new System.Drawing.Point(684, 4);
+            this.btnAnalysis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAnalysis.Name = "btnAnalysis";
-            this.btnAnalysis.Size = new System.Drawing.Size(130, 63);
+            this.btnAnalysis.Size = new System.Drawing.Size(221, 78);
             this.btnAnalysis.TabIndex = 2;
             this.btnAnalysis.Text = "Analysis";
             this.btnAnalysis.UseVisualStyleBackColor = true;
@@ -147,91 +153,99 @@
             this.btnManage.FlatAppearance.BorderSize = 0;
             this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManage.Location = new System.Drawing.Point(547, 3);
+            this.btnManage.Location = new System.Drawing.Point(911, 4);
+            this.btnManage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnManage.Name = "btnManage";
-            this.btnManage.Size = new System.Drawing.Size(130, 63);
+            this.btnManage.Size = new System.Drawing.Size(221, 78);
             this.btnManage.TabIndex = 3;
             this.btnManage.Text = "Create Event";
             this.btnManage.UseVisualStyleBackColor = true;
             this.btnManage.Click += new System.EventHandler(this.btnManage_Click);
             // 
-            // btnNotif
-            // 
-            this.btnNotif.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnNotif.Image = ((System.Drawing.Image)(resources.GetObject("btnNotif.Image")));
-            this.btnNotif.Location = new System.Drawing.Point(683, 3);
-            this.btnNotif.Name = "btnNotif";
-            this.btnNotif.Size = new System.Drawing.Size(34, 63);
-            this.btnNotif.TabIndex = 4;
-            this.btnNotif.Text = "button5";
-            this.btnNotif.UseVisualStyleBackColor = true;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.Location = new System.Drawing.Point(723, 3);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(33, 23);
-            this.btnSettings.TabIndex = 5;
-            this.btnSettings.Text = "button6";
-            this.btnSettings.UseVisualStyleBackColor = true;
-            // 
-            // btnUser
-            // 
-            this.btnUser.Location = new System.Drawing.Point(763, 3);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(34, 23);
-            this.btnUser.TabIndex = 6;
-            this.btnUser.Text = "button7";
-            this.btnUser.UseVisualStyleBackColor = true;
-            // 
             // pbxLogo
             // 
             this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
             this.pbxLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxLogo.InitialImage")));
-            this.pbxLogo.Location = new System.Drawing.Point(3, 3);
+            this.pbxLogo.Location = new System.Drawing.Point(3, 4);
+            this.pbxLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(129, 63);
+            this.pbxLogo.Size = new System.Drawing.Size(145, 78);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxLogo.TabIndex = 7;
             this.pbxLogo.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1138, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(56, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1205, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 62);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1272, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(56, 62);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gray;
             this.panel3.Controls.Add(this.lblValidNumWarning);
-            this.panel3.Controls.Add(this.btnRegisterTickets);
             this.panel3.Controls.Add(this.txtNumOfTickets);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(351, 293);
+            this.panel3.Location = new System.Drawing.Point(521, 138);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(429, 148);
+            this.panel3.Size = new System.Drawing.Size(675, 285);
             this.panel3.TabIndex = 11;
             // 
-            // btnRegisterTickets
+            // lblValidNumWarning
             // 
-            this.btnRegisterTickets.Location = new System.Drawing.Point(110, 104);
-            this.btnRegisterTickets.Name = "btnRegisterTickets";
-            this.btnRegisterTickets.Size = new System.Drawing.Size(141, 31);
-            this.btnRegisterTickets.TabIndex = 3;
-            this.btnRegisterTickets.Text = "Register";
-            this.btnRegisterTickets.UseVisualStyleBackColor = true;
-            this.btnRegisterTickets.Click += new System.EventHandler(this.btnRegisterTickets_Click);
+            this.lblValidNumWarning.AutoSize = true;
+            this.lblValidNumWarning.ForeColor = System.Drawing.Color.Red;
+            this.lblValidNumWarning.Location = new System.Drawing.Point(94, 130);
+            this.lblValidNumWarning.Name = "lblValidNumWarning";
+            this.lblValidNumWarning.Size = new System.Drawing.Size(214, 20);
+            this.lblValidNumWarning.TabIndex = 11;
+            this.lblValidNumWarning.Text = "*Please enter a valid number.";
+            this.lblValidNumWarning.Visible = false;
             // 
             // txtNumOfTickets
             // 
-            this.txtNumOfTickets.Location = new System.Drawing.Point(42, 71);
+            this.txtNumOfTickets.Location = new System.Drawing.Point(98, 92);
+            this.txtNumOfTickets.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNumOfTickets.Name = "txtNumOfTickets";
-            this.txtNumOfTickets.Size = new System.Drawing.Size(183, 22);
+            this.txtNumOfTickets.Size = new System.Drawing.Size(311, 26);
             this.txtNumOfTickets.TabIndex = 2;
             this.txtNumOfTickets.Text = "Enter No. of Tickets:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(30, 42);
+            this.label9.Location = new System.Drawing.Point(84, 69);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(143, 16);
+            this.label9.Size = new System.Drawing.Size(169, 20);
             this.label9.TabIndex = 1;
             this.label9.Text = "Register No. of Tickets";
             // 
@@ -240,65 +254,21 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 14);
+            this.label3.Location = new System.Drawing.Point(208, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 20);
+            this.label3.Size = new System.Drawing.Size(253, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Register No. of Tickets";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.btnRegister);
-            this.panel2.Controls.Add(this.txtAttendeeName);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(351, 105);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(430, 158);
-            this.panel2.TabIndex = 10;
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.Location = new System.Drawing.Point(109, 118);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(143, 27);
-            this.btnRegister.TabIndex = 3;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
-            // 
-            // txtAttendeeName
-            // 
-            this.txtAttendeeName.Location = new System.Drawing.Point(53, 79);
-            this.txtAttendeeName.Name = "txtAttendeeName";
-            this.txtAttendeeName.Size = new System.Drawing.Size(173, 22);
-            this.txtAttendeeName.TabIndex = 2;
-            this.txtAttendeeName.Text = "Attendee Name:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(48, 53);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 16);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Attendee Name:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Register Attendee";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.timeEnd);
+            this.panel1.Controls.Add(this.timeStart);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.lblEmptyFieldsWarning);
             this.panel1.Controls.Add(this.btnCreate);
             this.panel1.Controls.Add(this.txtHost);
@@ -310,16 +280,86 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(22, 94);
+            this.panel1.Location = new System.Drawing.Point(68, 138);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 348);
+            this.panel1.Size = new System.Drawing.Size(356, 734);
             this.panel1.TabIndex = 9;
+            // 
+            // timeEnd
+            // 
+            this.timeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timeEnd.Location = new System.Drawing.Point(28, 482);
+            this.timeEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.timeEnd.Name = "timeEnd";
+            this.timeEnd.ShowUpDown = true;
+            this.timeEnd.Size = new System.Drawing.Size(274, 26);
+            this.timeEnd.TabIndex = 17;
+            // 
+            // timeStart
+            // 
+            this.timeStart.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timeStart.Location = new System.Drawing.Point(28, 430);
+            this.timeStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.timeStart.Name = "timeStart";
+            this.timeStart.ShowUpDown = true;
+            this.timeStart.Size = new System.Drawing.Size(274, 26);
+            this.timeStart.TabIndex = 13;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(25, 516);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 20);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Event Date:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(28, 539);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(274, 26);
+            this.dateTimePicker1.TabIndex = 13;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(20, 460);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(80, 20);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Time End:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(20, 408);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 20);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Time Start:";
+            // 
+            // lblEmptyFieldsWarning
+            // 
+            this.lblEmptyFieldsWarning.AutoSize = true;
+            this.lblEmptyFieldsWarning.ForeColor = System.Drawing.Color.Red;
+            this.lblEmptyFieldsWarning.Location = new System.Drawing.Point(17, 596);
+            this.lblEmptyFieldsWarning.Name = "lblEmptyFieldsWarning";
+            this.lblEmptyFieldsWarning.Size = new System.Drawing.Size(216, 20);
+            this.lblEmptyFieldsWarning.TabIndex = 10;
+            this.lblEmptyFieldsWarning.Text = "*Make sure all fields are filled.";
+            this.lblEmptyFieldsWarning.Visible = false;
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(81, 308);
+            this.btnCreate.Location = new System.Drawing.Point(100, 642);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(131, 38);
+            this.btnCreate.Size = new System.Drawing.Size(147, 48);
             this.btnCreate.TabIndex = 9;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
@@ -327,69 +367,73 @@
             // 
             // txtHost
             // 
-            this.txtHost.Location = new System.Drawing.Point(30, 178);
+            this.txtHost.Location = new System.Drawing.Point(28, 332);
+            this.txtHost.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHost.Name = "txtHost";
-            this.txtHost.Size = new System.Drawing.Size(169, 22);
+            this.txtHost.Size = new System.Drawing.Size(274, 26);
             this.txtHost.TabIndex = 8;
             this.txtHost.Text = "Enter Event Host:";
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(33, 134);
+            this.txtAddress.Location = new System.Drawing.Point(28, 265);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(171, 22);
+            this.txtAddress.Size = new System.Drawing.Size(274, 26);
             this.txtAddress.TabIndex = 7;
             this.txtAddress.Text = "Enter Event address:";
             // 
             // txtVenue
             // 
-            this.txtVenue.Location = new System.Drawing.Point(33, 91);
+            this.txtVenue.Location = new System.Drawing.Point(28, 192);
+            this.txtVenue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtVenue.Name = "txtVenue";
-            this.txtVenue.Size = new System.Drawing.Size(166, 22);
+            this.txtVenue.Size = new System.Drawing.Size(274, 26);
             this.txtVenue.TabIndex = 6;
             this.txtVenue.Text = "Enter Event Venue:";
             // 
             // txtEventName
             // 
-            this.txtEventName.Location = new System.Drawing.Point(33, 47);
+            this.txtEventName.Location = new System.Drawing.Point(28, 122);
+            this.txtEventName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEventName.Name = "txtEventName";
-            this.txtEventName.Size = new System.Drawing.Size(162, 22);
+            this.txtEventName.Size = new System.Drawing.Size(274, 26);
             this.txtEventName.TabIndex = 5;
             this.txtEventName.Text = "Enter Event Name:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 159);
+            this.label7.Location = new System.Drawing.Point(27, 309);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 16);
+            this.label7.Size = new System.Drawing.Size(92, 20);
             this.label7.TabIndex = 4;
             this.label7.Text = "Event Host:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 116);
+            this.label6.Location = new System.Drawing.Point(27, 241);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 16);
+            this.label6.Size = new System.Drawing.Size(117, 20);
             this.label6.TabIndex = 3;
             this.label6.Text = "Event Address:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 72);
+            this.label5.Location = new System.Drawing.Point(27, 169);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 16);
+            this.label5.Size = new System.Drawing.Size(105, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Event Venue:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 28);
+            this.label4.Location = new System.Drawing.Point(27, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 16);
+            this.label4.Size = new System.Drawing.Size(100, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "Event Name:";
             // 
@@ -398,51 +442,31 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(96, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 20);
+            this.label1.Size = new System.Drawing.Size(149, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Create Event";
             // 
-            // lblEmptyFieldsWarning
-            // 
-            this.lblEmptyFieldsWarning.AutoSize = true;
-            this.lblEmptyFieldsWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblEmptyFieldsWarning.Location = new System.Drawing.Point(33, 240);
-            this.lblEmptyFieldsWarning.Name = "lblEmptyFieldsWarning";
-            this.lblEmptyFieldsWarning.Size = new System.Drawing.Size(184, 16);
-            this.lblEmptyFieldsWarning.TabIndex = 10;
-            this.lblEmptyFieldsWarning.Text = "*Make sure all fields are filled.";
-            this.lblEmptyFieldsWarning.Visible = false;
-            // 
-            // lblValidNumWarning
-            // 
-            this.lblValidNumWarning.AutoSize = true;
-            this.lblValidNumWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblValidNumWarning.Location = new System.Drawing.Point(231, 77);
-            this.lblValidNumWarning.Name = "lblValidNumWarning";
-            this.lblValidNumWarning.Size = new System.Drawing.Size(182, 16);
-            this.lblValidNumWarning.TabIndex = 11;
-            this.lblValidNumWarning.Text = "*Please enter a valid number.";
-            this.lblValidNumWarning.Visible = false;
-            // 
             // CreateEvent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1340, 888);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CreateEvent";
             this.Text = "CreateEvent";
+            this.Load += new System.EventHandler(this.CreateEvent_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -456,20 +480,11 @@
         private System.Windows.Forms.Button btnCalendar;
         private System.Windows.Forms.Button btnAnalysis;
         private System.Windows.Forms.Button btnManage;
-        private System.Windows.Forms.Button btnNotif;
-        private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnRegisterTickets;
         private System.Windows.Forms.TextBox txtNumOfTickets;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.TextBox txtAttendeeName;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.TextBox txtHost;
@@ -483,5 +498,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblEmptyFieldsWarning;
         private System.Windows.Forms.Label lblValidNumWarning;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker timeEnd;
+        private System.Windows.Forms.DateTimePicker timeStart;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
