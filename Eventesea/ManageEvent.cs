@@ -35,8 +35,8 @@ namespace Eventesea
             string eventSesTicket = EventSession.EventTicket;
 
             DateTime formattedDate, formattedTimeStart, formattedTimeEnd;
-            if(DateTime.TryParse(eventSesDate, out formattedDate) && 
-                DateTime.TryParse(eventSesStart, out formattedTimeStart) && 
+            if (DateTime.TryParse(eventSesDate, out formattedDate) &&
+                DateTime.TryParse(eventSesStart, out formattedTimeStart) &&
                 DateTime.TryParse(eventSesEnd, out formattedTimeEnd))
             {
                 dateTimePicker1.Value = formattedDate;
@@ -48,7 +48,7 @@ namespace Eventesea
             cmd = new OleDbCommand(searchEvent, con);
             OleDbDataReader dr = cmd.ExecuteReader();
 
-            if(dr.HasRows)
+            if (dr.HasRows)
             {
                 while (dr.Read())
                 {
@@ -68,7 +68,7 @@ namespace Eventesea
             da.Fill(dt);
             listView1.Items.Clear();
 
-            foreach(DataRow read in dt.Rows)
+            foreach (DataRow read in dt.Rows)
             {
                 ListViewItem item = new ListViewItem(read["Attendee_Name"].ToString());
                 item.SubItems.Add(read["Attendee_Email"].ToString());
@@ -130,14 +130,14 @@ namespace Eventesea
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if(listView1.SelectedItems.Count > 0)
+            if (listView1.SelectedItems.Count > 0)
             {
                 ListViewItem selectedItem = listView1.SelectedItems[0];
                 if (int.TryParse(selectedItem.SubItems[3].Text, out int id))
                 {
                     AttendeeSession.AttendeeID = id;
                 }
-                
+
                 //prompt the user to confirm action
                 MsgBoxRemoveAttendee msgremove = new MsgBoxRemoveAttendee(this);
                 msgremove.Show();
@@ -199,7 +199,7 @@ namespace Eventesea
                 string timeEndFormatted = timeEnd.Value.ToString("HH:mm");
                 string dateFormatted = dateTimePicker1.Value.ToString("MM/dd/yyyy");
 
-                string updateEvent = $"UPDATE Event_Database SET Event_ID = {EventSession.EventID}, User_ID = {UserSession.UserID}, Event_Name = '{txtEventName.Text}', " +
+                string updateEvent = $"UPDATE Event_Database SET User_ID = {UserSession.UserID}, Event_Name = '{txtEventName.Text}', " +
                     $"Event_Venue = '{txtVenue.Text}', Event_Address = '{txtAddress.Text}', Event_Host = '{txtHost.Text}', Event_Date = #{dateFormatted}#, " +
                     $"Event_TimeStart = #{timeStartFormatted}#, Event_TimeEnd = #{timeEndFormatted}#, Event_Tickets = {txtNumOfTickets.Text} WHERE Event_ID = {EventSession.EventID}";
                 cmd = new OleDbCommand(updateEvent, con);
@@ -214,5 +214,24 @@ namespace Eventesea
             }
         }
 
+        private void pbxLogo_Click(object sender, EventArgs e)
+        {
+            Index index = new Index();
+            index.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form1 profile = new Form1();
+            profile.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Settings_DesignTheme settings = new Settings_DesignTheme();
+            settings.Show();
+        }
     }
 }

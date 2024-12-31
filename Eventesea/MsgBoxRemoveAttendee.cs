@@ -39,16 +39,28 @@ namespace Eventesea
 
         private void btnYes_Click(object sender, EventArgs e)
         {
-            con.Open();
-            string deleteAttend = $"DELETE FROM Attendee_Database WHERE Attendee_ID = {AttendeeSession.AttendeeID}";
-            cmd = new OleDbCommand(deleteAttend, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
+            try
+            {
+                //delete attendee and calculate tickets
+                using (OleDbConnection con = new OleDbConnection(Global.dbConnectionString))
+                {
+                    con.Open();
+                    string deleteAttend = $"DELETE FROM Attendee_Database WHERE Attendee_ID = {AttendeeSession.AttendeeID}";
+                    using (OleDbCommand cmd = new OleDbCommand(deleteAttend, con))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
 
-            //reload the listview
-            manageEvent.LoadAttendees();
+                }
 
-            this.Close();
+                //refresh attendee list
+                manageEvent.LoadAttendees();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while removing the attendee: {ex.Message}");
+            }
         }
 
         private void btnNo_Click(object sender, EventArgs e)

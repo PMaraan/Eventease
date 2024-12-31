@@ -76,6 +76,18 @@
     <Compile Include="EventListing.Designer.cs">
       <DependentUpon>EventListing.cs</DependentUpon>
     </Compile>
+    <Compile Include="MsgBoxChangePassConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxChangePassConfirm.Designer.cs">
+      <DependentUpon>MsgBoxChangePassConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgBoxLogoutConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxLogoutConfirm.Designer.cs">
+      <DependentUpon>MsgBoxLogoutConfirm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings_DataExport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +99,6 @@
     </Compile>
     <Compile Include="Settings_CalendarPreferences.Designer.cs">
       <DependentUpon>Settings_CalendarPreferences.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Settings_AccountSecurity.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Settings_AccountSecurity.Designer.cs">
-      <DependentUpon>Settings_AccountSecurity.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings_LanguageandDate.cs">
       <SubType>Form</SubType>
@@ -137,12 +143,6 @@
     <Compile Include="LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
-    </Compile>
     <Compile Include="ManageEvent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,11 +176,14 @@
     <EmbeddedResource Include="EventListing.resx">
       <DependentUpon>EventListing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxChangePassConfirm.resx">
+      <DependentUpon>MsgBoxChangePassConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxLogoutConfirm.resx">
+      <DependentUpon>MsgBoxLogoutConfirm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings_DataExport.resx">
       <DependentUpon>Settings_DataExport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Settings_AccountSecurity.resx">
-      <DependentUpon>Settings_AccountSecurity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings_CalendarPreferences.resx">
       <DependentUpon>Settings_CalendarPreferences.cs</DependentUpon>
@@ -199,9 +202,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MsgBoxRemoveAttendee.resx">
       <DependentUpon>MsgBoxRemoveAttendee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>

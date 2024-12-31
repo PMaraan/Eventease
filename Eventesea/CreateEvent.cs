@@ -73,7 +73,7 @@ namespace Eventesea
             //This code will iterate the event_ID per registration
             con.Open();
             int newEventID = 0;
-            string searchLastEventID = "SELECT TOP 1 Event_ID FROM Event_Database ORDER BY User_ID DESC";
+            string searchLastEventID = "SELECT TOP 1 Event_ID FROM Event_Database ORDER BY Event_ID DESC";
             cmd = new OleDbCommand(searchLastEventID, con);
             using (OleDbDataReader reader = cmd.ExecuteReader())
             {
@@ -84,7 +84,7 @@ namespace Eventesea
                 }
             }
             con.Close();
-
+            MessageBox.Show(newEventID.ToString());
             //check for empty fields
             if (txtEventName.Text == string.Empty || txtVenue.Text == string.Empty || txtAddress.Text == string.Empty || txtHost.Text == string.Empty)
             {
@@ -142,6 +142,26 @@ namespace Eventesea
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbxLogo_Click(object sender, EventArgs e)
+        {
+            Index index = new Index();
+            index.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form1 profile = new Form1();
+            profile.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Settings_DesignTheme settings = new Settings_DesignTheme();
+            settings.Show();
         }
     }
 }

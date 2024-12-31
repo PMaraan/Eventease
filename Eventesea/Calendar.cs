@@ -72,5 +72,25 @@ namespace Eventesea
         {
 
         }
+
+        private void pbxLogo_Click(object sender, EventArgs e)
+        {
+            Index index = new Index();
+            index.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form1 profile = new Form1();
+            profile.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Settings_DesignTheme settings = new Settings_DesignTheme();
+            settings.Show();
+        }
     }
 }

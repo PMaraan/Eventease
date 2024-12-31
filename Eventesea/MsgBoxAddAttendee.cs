@@ -40,35 +40,40 @@ namespace Eventesea
 
         private void btnYes_Click(object sender, EventArgs e)
         {
+            // Check for existing attendee with the same email for the event
             con.Open();
-
-            //This code will iterate the user_ID per registration
-            int newAttendanceID = 1;
-            string searchLastAttendanceID = "SELECT TOP 1 Attendee_ID FROM Attendee_Database ORDER BY Attendee_ID DESC";
-            cmd = new OleDbCommand(searchLastAttendanceID, con);
-            using (OleDbDataReader reader = cmd.ExecuteReader())
-            {
-                if (reader.HasRows)
-                {
-                    reader.Read();
-                    newAttendanceID = reader.GetInt32(0) + 1;
-                }
-            }
+            string checkDuplicate = $"SELECT COUNT(*) FROM Attendee_Database WHERE Attendee_Email = '{AttendeeSession.AttendeeEmail}' AND Event_ID = {EventSession.EventID}";
+            cmd = new OleDbCommand(checkDuplicate, con);
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
             con.Close();
 
-            //insert into database
+            if (count > 0)
+            {
+                MessageBox.Show("This attendee is already registered for the event.");
+                return;
+            }
+
+            // Get new Attendee_ID
+            con.Open();
+            string queryLastID = "SELECT MAX(Attendee_ID) FROM Attendee_Database";
+            cmd = new OleDbCommand(queryLastID, con);
+            var maxID = cmd.ExecuteScalar();
+            int newAttendeeID = (maxID != DBNull.Value) ? Convert.ToInt32(maxID) + 1 : 1;
+            con.Close();
+
+            // Insert new attendee
             con.Open();
             string addAttendee = $"INSERT INTO Attendee_Database (Attendee_ID, Attendee_Name, Attendee_Email, Event_ID) VALUES " +
-                $"({newAttendanceID}, '{AttendeeSession.AttendeeName}', '{AttendeeSession.AttendeeEmail}', {EventSession.EventID})";
+                $"({newAttendeeID}, '{AttendeeSession.AttendeeName}', '{AttendeeSession.AttendeeEmail}', {EventSession.EventID})";
             cmd = new OleDbCommand(addAttendee, con);
             cmd.ExecuteNonQuery();
             con.Close();
 
-            //reload the listview
+            // Reload the listview
             manageEvent.LoadAttendees();
-            
-            this.Close();
 
+            MessageBox.Show("Attendee added successfully!");
+            this.Close();
         }
 
         private void btnNo_Click(object sender, EventArgs e)

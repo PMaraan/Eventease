@@ -71,7 +71,6 @@
             this.btnAnalysis = new System.Windows.Forms.Button();
             this.btnManage = new System.Windows.Forms.Button();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -79,7 +78,6 @@
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -311,6 +309,7 @@
             this.attendeeEmail,
             this.eventID,
             this.attendID});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(19, 290);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -333,11 +332,12 @@
             // eventID
             // 
             this.eventID.Text = "EventID";
-            this.eventID.Width = 20;
+            this.eventID.Width = 0;
             // 
             // attendID
             // 
             this.attendID.Text = "ID";
+            this.attendID.Width = 0;
             // 
             // btnDelete
             // 
@@ -446,31 +446,29 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
-            this.tableLayoutPanel1.ColumnCount = 8;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.ColumnCount = 7;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.89474F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.89474F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.89474F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.89474F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.89474F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.btnEventListing, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnCalendar, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnAnalysis, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnManage, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.pbxLogo, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 6, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1340, 86);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1268, 86);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // btnEventListing
@@ -480,10 +478,10 @@
             this.btnEventListing.FlatAppearance.BorderSize = 0;
             this.btnEventListing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEventListing.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventListing.Location = new System.Drawing.Point(230, 4);
+            this.btnEventListing.Location = new System.Drawing.Point(229, 4);
             this.btnEventListing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEventListing.Name = "btnEventListing";
-            this.btnEventListing.Size = new System.Drawing.Size(221, 78);
+            this.btnEventListing.Size = new System.Drawing.Size(220, 78);
             this.btnEventListing.TabIndex = 0;
             this.btnEventListing.Text = "Event Listing";
             this.btnEventListing.UseVisualStyleBackColor = false;
@@ -496,10 +494,10 @@
             this.btnCalendar.FlatAppearance.BorderSize = 0;
             this.btnCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalendar.Location = new System.Drawing.Point(457, 4);
+            this.btnCalendar.Location = new System.Drawing.Point(455, 4);
             this.btnCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Size = new System.Drawing.Size(221, 78);
+            this.btnCalendar.Size = new System.Drawing.Size(220, 78);
             this.btnCalendar.TabIndex = 1;
             this.btnCalendar.Text = "Calendar";
             this.btnCalendar.UseVisualStyleBackColor = false;
@@ -511,10 +509,10 @@
             this.btnAnalysis.FlatAppearance.BorderSize = 0;
             this.btnAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnalysis.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalysis.Location = new System.Drawing.Point(684, 4);
+            this.btnAnalysis.Location = new System.Drawing.Point(681, 4);
             this.btnAnalysis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAnalysis.Name = "btnAnalysis";
-            this.btnAnalysis.Size = new System.Drawing.Size(221, 78);
+            this.btnAnalysis.Size = new System.Drawing.Size(220, 78);
             this.btnAnalysis.TabIndex = 2;
             this.btnAnalysis.Text = "Analysis";
             this.btnAnalysis.UseVisualStyleBackColor = true;
@@ -526,10 +524,10 @@
             this.btnManage.FlatAppearance.BorderSize = 0;
             this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManage.Location = new System.Drawing.Point(911, 4);
+            this.btnManage.Location = new System.Drawing.Point(907, 4);
             this.btnManage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnManage.Name = "btnManage";
-            this.btnManage.Size = new System.Drawing.Size(221, 78);
+            this.btnManage.Size = new System.Drawing.Size(220, 78);
             this.btnManage.TabIndex = 3;
             this.btnManage.Text = "Manage Event";
             this.btnManage.UseVisualStyleBackColor = true;
@@ -546,46 +544,38 @@
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxLogo.TabIndex = 7;
             this.pbxLogo.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1138, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.pbxLogo.Click += new System.EventHandler(this.pbxLogo_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1205, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(1133, 4);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(56, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1272, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(1199, 4);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(56, 62);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // ManageEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1340, 888);
+            this.ClientSize = new System.Drawing.Size(1268, 888);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -601,7 +591,6 @@
             this.panel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -651,7 +640,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ColumnHeader eventID;
         private System.Windows.Forms.ColumnHeader attendID;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
     }
