@@ -34,12 +34,4 @@ namespace Eventesea
         public static string AttendeeEmail { get; set; }
 
     }
-    public static class TicketSession
-    {
-        public static int TicketMax { get; set; }
-        public static int TicketSold { get; set; }
-        public static int TicketUnsold { get; set; }
-
-
-    }
 }
