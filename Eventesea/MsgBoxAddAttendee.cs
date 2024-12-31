@@ -37,83 +37,38 @@ namespace Eventesea
             string eventSesTicket = EventSession.EventTicket;
 
         }
-        //private int getTicketID()
-        //{
-        //    int nextTicketID;
-        //    con.Open();
-
-        //    try
-        //    {
-        //        // Check for deleted ticket IDs
-        //        string checkDeletedEventQuery = "SELECT TOP 1 Ticket_ID FROM Deleted_TicketID ORDER BY Ticket_ID ASC";
-        //        cmd = new OleDbCommand(checkDeletedEventQuery, con);
-        //        var result = cmd.ExecuteScalar();
-
-        //        if (result != null)
-        //        {
-        //            // Use the recycled ID from Deleted_TicketID
-        //            nextTicketID = Convert.ToInt32(result);
-
-        //            // Delete the used ID from Deleted_TicketID
-        //            string deleteDeletedEventQuery = $"DELETE FROM Deleted_TicketID WHERE Ticket_ID = {nextTicketID}";
-        //            cmd = new OleDbCommand(deleteDeletedEventQuery, con);
-        //            cmd.ExecuteNonQuery();
-        //        }
-        //        else
-        //        {
-        //            // No deleted IDs available, get the max Ticket_ID
-        //            string getMaxEventIDQuery = "SELECT MAX(Ticket_ID) FROM TicketSales_Rec";
-        //            cmd = new OleDbCommand(getMaxEventIDQuery, con);
-        //            var maxID = cmd.ExecuteScalar();
-        //            nextTicketID = (maxID != DBNull.Value) ? Convert.ToInt32(maxID) + 1 : 1;
-        //        }
-        //    }
-        //    finally
-        //    {
-        //        con.Close();
-        //    }
-        //    TicketSession.TicketID = nextTicketID;
-        //    MessageBox.Show(nextTicketID.ToString());
-        //    return nextTicketID;
-        //}
 
         private void btnYes_Click(object sender, EventArgs e)
         {
-
-            // Check for existing attendee with the same email for the event
             con.Open();
-            string checkDuplicate = $"SELECT COUNT(*) FROM Attendee_Database WHERE Attendee_Email = '{AttendeeSession.AttendeeEmail}' AND Event_ID = {EventSession.EventID}";
-            cmd = new OleDbCommand(checkDuplicate, con);
-            int count = Convert.ToInt32(cmd.ExecuteScalar());
-            con.Close();
 
-            if (count > 0)
+            //This code will iterate the user_ID per registration
+            int newAttendanceID = 1;
+            string searchLastAttendanceID = "SELECT TOP 1 Attendee_ID FROM Attendee_Database ORDER BY Attendee_ID DESC";
+            cmd = new OleDbCommand(searchLastAttendanceID, con);
+            using (OleDbDataReader reader = cmd.ExecuteReader())
             {
-                MessageBox.Show("This attendee is already registered for the event.");
-                return;
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    newAttendanceID = reader.GetInt32(0) + 1;
+                }
             }
-
-            // Get new Attendee_ID
-            con.Open();
-            string queryLastID = "SELECT MAX(Attendee_ID) FROM Attendee_Database";
-            cmd = new OleDbCommand(queryLastID, con);
-            var maxID = cmd.ExecuteScalar();
-            int newAttendeeID = (maxID != DBNull.Value) ? Convert.ToInt32(maxID) + 1 : 1;
             con.Close();
 
-            // Insert new attendee
+            //insert into database
             con.Open();
             string addAttendee = $"INSERT INTO Attendee_Database (Attendee_ID, Attendee_Name, Attendee_Email, Event_ID) VALUES " +
-                $"({newAttendeeID}, '{AttendeeSession.AttendeeName}', '{AttendeeSession.AttendeeEmail}', {EventSession.EventID})";
+                $"({newAttendanceID}, '{AttendeeSession.AttendeeName}', '{AttendeeSession.AttendeeEmail}', {EventSession.EventID})";
             cmd = new OleDbCommand(addAttendee, con);
             cmd.ExecuteNonQuery();
             con.Close();
 
-            // Reload the listview
+            //reload the listview
             manageEvent.LoadAttendees();
-
-            MessageBox.Show("Attendee added successfully!");
+            
             this.Close();
+
         }
 
         private void btnNo_Click(object sender, EventArgs e)
