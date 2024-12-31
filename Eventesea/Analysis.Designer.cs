@@ -67,13 +67,14 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(323, 152);
+            this.chart1.Location = new System.Drawing.Point(363, 190);
+            this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(467, 293);
+            this.chart1.Size = new System.Drawing.Size(525, 366);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             // 
@@ -82,20 +83,23 @@
             this.comboBox1.BackColor = System.Drawing.Color.Gray;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(317, 94);
+            this.comboBox1.Location = new System.Drawing.Point(357, 118);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(189, 33);
+            this.comboBox1.Size = new System.Drawing.Size(212, 37);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.Text = "Event 1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(13, 355);
+            this.panel1.Location = new System.Drawing.Point(15, 444);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(168, 84);
+            this.panel1.Size = new System.Drawing.Size(189, 105);
             this.panel1.TabIndex = 6;
             // 
             // label7
@@ -103,9 +107,9 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 44);
+            this.label7.Location = new System.Drawing.Point(40, 55);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 32);
+            this.label7.Size = new System.Drawing.Size(53, 38);
             this.label7.TabIndex = 1;
             this.label7.Text = "50";
             // 
@@ -114,9 +118,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 9);
+            this.label4.Location = new System.Drawing.Point(7, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 20);
+            this.label4.Size = new System.Drawing.Size(200, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "No of Unsold Ticket";
             // 
@@ -125,9 +129,10 @@
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(13, 265);
+            this.panel2.Location = new System.Drawing.Point(15, 331);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(168, 75);
+            this.panel2.Size = new System.Drawing.Size(189, 94);
             this.panel2.TabIndex = 7;
             // 
             // label6
@@ -135,9 +140,9 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 39);
+            this.label6.Location = new System.Drawing.Point(34, 49);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 32);
+            this.label6.Size = new System.Drawing.Size(71, 38);
             this.label6.TabIndex = 1;
             this.label6.Text = "261";
             // 
@@ -148,7 +153,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(-1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 20);
+            this.label3.Size = new System.Drawing.Size(190, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "No. of Ticket sales";
             // 
@@ -157,9 +162,10 @@
             this.panel3.BackColor = System.Drawing.Color.Gray;
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(13, 152);
+            this.panel3.Location = new System.Drawing.Point(15, 190);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(163, 97);
+            this.panel3.Size = new System.Drawing.Size(183, 121);
             this.panel3.TabIndex = 8;
             // 
             // label5
@@ -167,9 +173,9 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 41);
+            this.label5.Location = new System.Drawing.Point(30, 51);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 32);
+            this.label5.Size = new System.Drawing.Size(71, 38);
             this.label5.TabIndex = 1;
             this.label5.Text = "221";
             // 
@@ -178,9 +184,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 11);
+            this.label2.Location = new System.Drawing.Point(15, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 20);
+            this.label2.Size = new System.Drawing.Size(172, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "No. of Attendees";
             // 
@@ -189,9 +195,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.LightGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 98);
+            this.label1.Location = new System.Drawing.Point(20, 122);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 25);
+            this.label1.Size = new System.Drawing.Size(167, 29);
             this.label1.TabIndex = 9;
             this.label1.Text = "Event Analysis";
             // 
@@ -217,11 +223,12 @@
             this.tableLayoutPanel1.Controls.Add(this.pbxLogo, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 69);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 86);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // btnEventListing
@@ -231,9 +238,10 @@
             this.btnEventListing.FlatAppearance.BorderSize = 0;
             this.btnEventListing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEventListing.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventListing.Location = new System.Drawing.Point(139, 3);
+            this.btnEventListing.Location = new System.Drawing.Point(156, 4);
+            this.btnEventListing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEventListing.Name = "btnEventListing";
-            this.btnEventListing.Size = new System.Drawing.Size(130, 63);
+            this.btnEventListing.Size = new System.Drawing.Size(147, 78);
             this.btnEventListing.TabIndex = 0;
             this.btnEventListing.Text = "Event Listing";
             this.btnEventListing.UseVisualStyleBackColor = false;
@@ -246,9 +254,10 @@
             this.btnCalendar.FlatAppearance.BorderSize = 0;
             this.btnCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalendar.Location = new System.Drawing.Point(275, 3);
+            this.btnCalendar.Location = new System.Drawing.Point(309, 4);
+            this.btnCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Size = new System.Drawing.Size(130, 63);
+            this.btnCalendar.Size = new System.Drawing.Size(147, 78);
             this.btnCalendar.TabIndex = 1;
             this.btnCalendar.Text = "Calendar";
             this.btnCalendar.UseVisualStyleBackColor = false;
@@ -260,9 +269,10 @@
             this.btnAnalysis.FlatAppearance.BorderSize = 0;
             this.btnAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnalysis.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalysis.Location = new System.Drawing.Point(411, 3);
+            this.btnAnalysis.Location = new System.Drawing.Point(462, 4);
+            this.btnAnalysis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAnalysis.Name = "btnAnalysis";
-            this.btnAnalysis.Size = new System.Drawing.Size(130, 63);
+            this.btnAnalysis.Size = new System.Drawing.Size(147, 78);
             this.btnAnalysis.TabIndex = 2;
             this.btnAnalysis.Text = "Analysis";
             this.btnAnalysis.UseVisualStyleBackColor = true;
@@ -274,9 +284,10 @@
             this.btnManage.FlatAppearance.BorderSize = 0;
             this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManage.Location = new System.Drawing.Point(547, 3);
+            this.btnManage.Location = new System.Drawing.Point(615, 4);
+            this.btnManage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnManage.Name = "btnManage";
-            this.btnManage.Size = new System.Drawing.Size(130, 63);
+            this.btnManage.Size = new System.Drawing.Size(147, 78);
             this.btnManage.TabIndex = 3;
             this.btnManage.Text = "Create Event";
             this.btnManage.UseVisualStyleBackColor = true;
@@ -286,27 +297,30 @@
             // 
             this.btnNotif.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNotif.Image = ((System.Drawing.Image)(resources.GetObject("btnNotif.Image")));
-            this.btnNotif.Location = new System.Drawing.Point(683, 3);
+            this.btnNotif.Location = new System.Drawing.Point(768, 4);
+            this.btnNotif.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNotif.Name = "btnNotif";
-            this.btnNotif.Size = new System.Drawing.Size(34, 63);
+            this.btnNotif.Size = new System.Drawing.Size(39, 78);
             this.btnNotif.TabIndex = 4;
             this.btnNotif.Text = "button5";
             this.btnNotif.UseVisualStyleBackColor = true;
             // 
             // btnSettings
             // 
-            this.btnSettings.Location = new System.Drawing.Point(723, 3);
+            this.btnSettings.Location = new System.Drawing.Point(813, 4);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(33, 23);
+            this.btnSettings.Size = new System.Drawing.Size(37, 29);
             this.btnSettings.TabIndex = 5;
             this.btnSettings.Text = "button6";
             this.btnSettings.UseVisualStyleBackColor = true;
             // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(763, 3);
+            this.btnUser.Location = new System.Drawing.Point(858, 4);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(34, 23);
+            this.btnUser.Size = new System.Drawing.Size(38, 29);
             this.btnUser.TabIndex = 6;
             this.btnUser.Text = "button7";
             this.btnUser.UseVisualStyleBackColor = true;
@@ -315,19 +329,20 @@
             // 
             this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
             this.pbxLogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxLogo.InitialImage")));
-            this.pbxLogo.Location = new System.Drawing.Point(3, 3);
+            this.pbxLogo.Location = new System.Drawing.Point(3, 4);
+            this.pbxLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(129, 63);
+            this.pbxLogo.Size = new System.Drawing.Size(145, 78);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxLogo.TabIndex = 7;
             this.pbxLogo.TabStop = false;
             // 
             // Analysis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
@@ -335,6 +350,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.chart1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Analysis";
             this.Text = "Analysis";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

@@ -65,12 +65,30 @@
     <Compile Include="CreateEvent.Designer.cs">
       <DependentUpon>CreateEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventEaseDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventEaseDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EventListing.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EventListing.Designer.cs">
       <DependentUpon>EventListing.cs</DependentUpon>
     </Compile>
+    <Compile Include="MsgBoxAddAttendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxAddAttendee.Designer.cs">
+      <DependentUpon>MsgBoxAddAttendee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgBoxRemoveAttendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxRemoveAttendee.Designer.cs">
+      <DependentUpon>MsgBoxRemoveAttendee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +127,7 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSession.cs" />
     <EmbeddedResource Include="Analysis.resx">
       <DependentUpon>Analysis.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +139,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EventListing.resx">
       <DependentUpon>EventListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxAddAttendee.resx">
+      <DependentUpon>MsgBoxAddAttendee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxRemoveAttendee.resx">
+      <DependentUpon>MsgBoxRemoveAttendee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -148,6 +173,17 @@
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="EventEaseDBDataSet.xsc">
+      <DependentUpon>EventEaseDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EventEaseDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventEaseDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EventEaseDBDataSet.xss">
+      <DependentUpon>EventEaseDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -160,6 +196,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EventEaseDB.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

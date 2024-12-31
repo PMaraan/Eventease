@@ -15,6 +15,12 @@ namespace Eventesea
         public Analysis()
         {
             InitializeComponent();
+            int currentUserID = UserSession.UserID;
+            string currentUserName = UserSession.UserName;
+            string currentUserFN = UserSession.UserFN;
+            string currentUserLN = UserSession.UserLN;
+            string currentUserEmail = UserSession.UserEmail;
+            string currentUserPass = UserSession.UserPass;
         }
 
         private void btnEventListing_Click(object sender, EventArgs e)
@@ -55,6 +61,11 @@ namespace Eventesea
             CreateEvent createEvent = new CreateEvent();
             createEvent.Show();
             this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
