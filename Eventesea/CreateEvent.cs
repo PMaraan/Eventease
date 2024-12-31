@@ -73,7 +73,7 @@ namespace Eventesea
             //This code will iterate the event_ID per registration
             con.Open();
             int newEventID = 0;
-            string searchLastEventID = "SELECT TOP 1 Event_ID FROM Event_Database ORDER BY Event_ID DESC";
+            string searchLastEventID = "SELECT TOP 1 Event_ID FROM Event_Database ORDER BY User_ID DESC";
             cmd = new OleDbCommand(searchLastEventID, con);
             using (OleDbDataReader reader = cmd.ExecuteReader())
             {
