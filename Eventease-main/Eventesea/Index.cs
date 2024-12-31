@@ -26,6 +26,35 @@ namespace Eventesea
             string currentUserEmail = UserSession.UserEmail;
             string currentUserPass = UserSession.UserPass;
             USERNAME.Text = $"Welcome, {UserSession.UserName}";
+
+            con.Open();
+            //display all created events in list
+            string getEvent = $"SELECT* FROM Event_Database ORDER BY Event_Name ASC";
+            da = new OleDbDataAdapter(getEvent, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            eventList.Items.Clear();
+            foreach(DataRow dr in dt.Rows)
+            {
+                DateTime timeStart = DateTime.Parse(dr["Event_TimeStart"].ToString());
+                DateTime timeEnd = DateTime.Parse(dr["Event_TimeEnd"].ToString());
+                DateTime eventDate = DateTime.Parse(dr["Event_Date"].ToString());
+
+
+                ListViewItem item = new ListViewItem(dr["Event_Name"].ToString());
+                item.SubItems.Add(dr["Event_Venue"].ToString());
+                item.SubItems.Add(dr["Event_Address"].ToString());
+                item.SubItems.Add(dr["Event_Host"].ToString());
+                item.SubItems.Add(timeStart.ToString("HH:mm"));
+                item.SubItems.Add(timeEnd.ToString("HH:mm"));
+                item.SubItems.Add(dr["Event_ID"].ToString());
+                item.SubItems.Add(eventDate.ToString("MM/dd/yyyy"));
+                item.SubItems.Add(dr["Event_Tickets"].ToString());
+                item.SubItems.Add(dr["User_ID"].ToString());
+                eventList.Items.Add(item);
+            }
+            con.Close();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -66,6 +95,44 @@ namespace Eventesea
             CreateEvent createEvent = new CreateEvent();
             createEvent.Show();
             this.Hide();
+        }
+
+        private void eventList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //display all attendees on selected list
+            con.Open();
+            if (eventList.SelectedItems.Count > 0)
+            {
+                //get EventID of selected event in the event list
+                ListViewItem selectedItem = eventList.SelectedItems[0];
+                if (int.TryParse(selectedItem.SubItems[6].Text, out int eventID))
+                {
+                    EventSession.EventID = eventID;
+                }
+                //display host label
+                lblHostName.Text = selectedItem.SubItems[3].Text;
+                
+                //display attendees of the selected event
+                string getAttendee = $"SELECT Attendee_Name FROM Attendee_Database WHERE Event_ID = {eventID} ORDER BY Attendee_Name ASC";
+                da = new OleDbDataAdapter(getAttendee, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                attendeeList.Items.Clear();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    ListViewItem item = new ListViewItem(dr["Attendee_Name"].ToString());
+                    attendeeList.Items.Add(item);
+                }
+
+                //prepare the amount of tickets
+
+                //display tickets sold
+
+                //display tickets unsold
+                
+
+            }
+            con.Close();
         }
     }
 }
